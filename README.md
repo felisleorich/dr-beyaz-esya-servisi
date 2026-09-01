@@ -1,15 +1,21 @@
-# Dr. Beyaz Eşya Servisi — GitHub Pages
+# Dr. Beyaz Eşya Servisi V3
 
-## Yayına alma
-1. GitHub'da yeni bir repository oluşturun.
-2. Bu klasördeki tüm dosyaları repository'nin köküne yükleyin.
-3. Settings → Pages → Deploy from a branch → `main` → `/ (root)` seçin.
-4. Domain satın aldıysanız GitHub Pages → Custom domain alanına domaini girin.
-5. Google Search Console'da domaini doğrulayın ve sitemap.xml gönderin.
-6. Google İşletme Profilinizde web sitesi alanına canlı site adresini ekleyin.
+V3 yenilikleri:
+- Yeni modern mobil tasarım
+- WhatsApp servis talep formu
+- 8 SEO odaklı hizmet sayfası
+- İngilizce destek sayfası
+- Pendik ve Kurtköy yerel SEO alanları
+- SSS bölümü
+- Schema.org ProfessionalService
+- Sitemap ve robots.txt
+- Mobil sabit Ara / WhatsApp butonları
 
-## Önemli
-- Sitedeki iletişim bilgileri verilen bilgilerle dolduruldu.
-- Mahalle listesini yalnızca gerçekten servis verilen yerlerde kullanın.
-- Yetkili servis değilseniz “yetkili servis” iddiasında bulunmayın.
-- Domain satın alınmadıysa canonical/sitemap içindeki `drbeyazesyaservisi.com` adresini kendi gerçek domaininizle değiştirin.
+GitHub repository kök dizinindeki mevcut dosyaların yerine bu paketteki dosyaları yükleyin.
+
+
+## V3.1 Görsel Güncellemesi
+- Her ana hizmet sayfasına cihaz/servis temalı görsel eklendi.
+- Ana sayfadaki emoji tabanlı hizmet ikonları fotoğraf kartlarıyla değiştirildi.
+- Hero, hizmetler, hakkımızda, iletişim ve İngilizce destek sayfaları görsel odaklı hale getirildi.
+- Görseller `assets/images/` klasöründedir.
