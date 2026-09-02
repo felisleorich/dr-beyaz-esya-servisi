@@ -1,0 +1,20 @@
+V4.5 GÖRSEL TEMİZLİĞİ
+
+Bu güncellemeden sonra site sayfalarında AI/stok görseller kullanılmaz.
+Eski depoda kalmış olabilecek aşağıdaki görseller artık sayfalarda REFERANS EDİLMEZ; istersen GitHub'dan silebilirsin:
+
+assets/images/hero-servis.jpg
+assets/images/blog.jpg
+assets/images/hizmetler.jpg
+assets/images/buzdolabi.jpg
+assets/images/camasir.jpg
+assets/images/bulasik.jpg
+assets/images/kurutma.jpg
+assets/images/firin.jpg
+assets/images/klima.jpg
+assets/images/kombi.jpg
+assets/images/derin-dondurucu.jpg
+assets/images/hakkimizda.jpg
+assets/images/english.jpg
+
+Not: Doğrulanmış saha fotoğrafları assets/images/gercek-servis/ altında kullanılmaktadır.

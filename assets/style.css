@@ -68,3 +68,19 @@
 .stats-grid>div b{font-size:26px}.stats-grid>div span{line-height:1.35}
 @media(max-width:900px){.real-work-grid{grid-template-columns:1fr 1fr;grid-auto-rows:220px}.real-work-item.large{grid-row:span 2}.review-auth-bar,.review-proof-panel,.review-bottom{align-items:flex-start;flex-direction:column}.review-cards-v44{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.real-work-head{display:block}.real-work-head .text-link{display:inline-block;margin-top:10px}.real-work-grid{grid-template-columns:1fr;grid-auto-rows:250px}.real-work-item.large{grid-row:auto;min-height:330px}.review-cards-v44{grid-template-columns:1fr}.review-auth-brand{align-items:flex-start}.review-auth-brand .google-word{margin-top:2px}.review-proof-panel{padding:24px}.review-proof-panel h2{font-size:26px}}
+
+/* V4.5 — Google location + no-AI visual policy */
+.location-strip{background:#0a2940;color:#e9f7fa;border-bottom:1px solid rgba(255,255,255,.12);position:relative;z-index:70}
+.location-strip-inner{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:18px;font-size:12px}
+.location-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.location-label b{color:#fff;margin-right:5px}
+.location-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+.location-actions a{color:#fff;text-decoration:none;font-weight:900;border:1px solid rgba(255,255,255,.24);padding:7px 10px;border-radius:9px;background:rgba(255,255,255,.06)}
+.location-actions a:hover{background:rgba(255,255,255,.13)}
+.location-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:28px;align-items:stretch}
+.location-grid h2{font-size:42px;line-height:1.08;margin:10px 0 12px}
+.location-map{min-height:360px}
+.service-card-no-photo{height:190px;display:grid;place-items:center;background:linear-gradient(135deg,#eef6f8,#dcecf1);color:#147aa8;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:1.5px;font-weight:900}
+.service-card-image-alt{display:none}
+@media(max-width:900px){.location-grid{grid-template-columns:1fr}.location-map{min-height:320px}.location-grid h2{font-size:36px}}
+@media(max-width:650px){.location-strip-inner{min-height:48px;padding:7px 0;align-items:stretch}.location-label{white-space:normal;line-height:1.35;display:flex;align-items:center}.location-actions{gap:5px}.location-actions a{padding:7px 8px;font-size:10px}.location-actions a:last-child{display:none}.location-grid{gap:20px}.location-map{min-height:280px}.service-card-no-photo{height:160px}}
