@@ -1,902 +1,702 @@
 [
   {
     "no": 1,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-01.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #1",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #1",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 2,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-01.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #2",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-02.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #2",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 3,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-01.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #3",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-03.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #3",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 4,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-02.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #4",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-04.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #4",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 5,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-01.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #5",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-05.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #5",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 6,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-03.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #6",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-06.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #6",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 7,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-02.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #7",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-07.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #7",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 8,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-02.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #8",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-08.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #8",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 9,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-04.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #9",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-09.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #9",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 10,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-05.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #10",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-10.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #10",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 11,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-01.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #11",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-11.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #11",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 12,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-03.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #12",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-12.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #12",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 13,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-03.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #13",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-13.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #13",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 14,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-04.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #14",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-14.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #14",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 15,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-05.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #15",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-15.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #15",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 16,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-01.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #16",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-16.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #16",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 17,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-06.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #17",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-17.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #17",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 18,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-02.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #18",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-18.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #18",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 19,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-03.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #19",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-19.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #19",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 20,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-04.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #20",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-20.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #20",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 21,
-    "category": "kurutma-makinesi",
-    "category_label": "Kurutma Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/kurutma-makinesi-gercek-servis-01.webp",
-    "seo_title": "Pendik kurutma makinesi teknik servis çalışması #21",
-    "alt": "Pendik kurutma makinesi teknik servis çalışması sırasında mekanik parça incelemesi",
-    "caption": "Kurutma makinesi mekanik sistem incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #21",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 22,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-05.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #22",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-02.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #22",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 23,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-06.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #23",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-03.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #23",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 24,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-06.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #24",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-04.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #24",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 25,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-04.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #25",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-05.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #25",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 26,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-07.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #26",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-06.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #26",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 27,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-07.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #27",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-07.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #27",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 28,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-08.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #28",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-08.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #28",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 29,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-09.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #29",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-09.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #29",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 30,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-02.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #30",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-10.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #30",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 31,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-10.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #31",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-11.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #31",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 32,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-08.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #32",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-12.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #32",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 33,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-02.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #33",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-13.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #33",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 34,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-07.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #34",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-14.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #34",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 35,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-08.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #35",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-15.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #35",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 36,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-05.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #36",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-16.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #36",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 37,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-03.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #37",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #37",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 38,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-04.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #38",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-02.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #38",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 39,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-05.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #39",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-03.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #39",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 40,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-11.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #40",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-04.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #40",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 41,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-06.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #41",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-05.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #41",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 42,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-09.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #42",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-06.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #42",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 43,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-07.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #43",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-07.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #43",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 44,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-03.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #44",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-08.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #44",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 45,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-12.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #45",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-09.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #45",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 46,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-04.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #46",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-10.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #46",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 47,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-10.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #47",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-11.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #47",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 48,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-08.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #48",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-12.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #48",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 49,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-06.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #49",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-13.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #49",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 50,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-05.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #50",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #50",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 51,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-13.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #51",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-02.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #51",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 52,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-06.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #52",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-03.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #52",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 53,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-07.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #53",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-04.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #53",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 54,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-08.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #54",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-05.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #54",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 55,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-09.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #55",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-06.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #55",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 56,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-07.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #56",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-07.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #56",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 57,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-11.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #57",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-08.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #57",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 58,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-14.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #58",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-09.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #58",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 59,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-10.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #59",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-10.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #59",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 60,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-09.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #60",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-11.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #60",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 61,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-11.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #61",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-12.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #61",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 62,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-10.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #62",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-13.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #62",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 63,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-12.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #63",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-14.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #63",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 64,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-08.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #64",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-15.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #64",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 65,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-11.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #65",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-16.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #65",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 66,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-12.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #66",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-17.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #66",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 67,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-09.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #67",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-18.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #67",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 68,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-10.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #68",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-19.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #68",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 69,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-11.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #69",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-20.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #69",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 70,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-13.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #70",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-21.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #70",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 71,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-14.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #71",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #71",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 72,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-13.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #72",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-02.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #72",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 73,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-12.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #73",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-03.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #73",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 74,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-09.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #74",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-04.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #74",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 75,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-15.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #75",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-05.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #75",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 76,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-10.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #76",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-06.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #76",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 77,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-14.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #77",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-07.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #77",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 78,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-16.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #78",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-08.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #78",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 79,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-12.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #79",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-09.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #79",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 80,
-    "category": "buzdolabi",
-    "category_label": "Buzdolabı Teknik Servisi",
-    "file": "assets/images/gercek-servis/buzdolabi-gercek-servis-13.webp",
-    "seo_title": "Pendik buzdolabı teknik servis ve soğutma sistemi çalışması #80",
-    "alt": "Pendik buzdolabı teknik servis çalışması sırasında soğutma sistemi ve iç mekanizma incelemesi",
-    "caption": "Buzdolabı soğutma sistemi ve teknik mekanizma incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-10.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #80",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 81,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-15.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #81",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-11.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #81",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 82,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-13.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #82",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-12.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #82",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 83,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-14.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #83",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-13.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #83",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 84,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-16.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #84",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-14.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #84",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 85,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-15.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #85",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-15.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #85",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 86,
-    "category": "bulasik-makinesi",
-    "category_label": "Bulaşık Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/bulasik-makinesi-gercek-servis-16.webp",
-    "seo_title": "Pendik bulaşık makinesi teknik servis çalışması #86",
-    "alt": "Pendik bulaşık makinesi teknik servis çalışması sırasında iç mekanizma incelemesi",
-    "caption": "Bulaşık makinesi iç mekanizma ve parça kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-16.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #86",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 87,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-15.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #87",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-17.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #87",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 88,
-    "category": "parca-motor-pompa",
-    "category_label": "Parça, Motor ve Pompa İncelemesi",
-    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-11.webp",
-    "seo_title": "Pendik beyaz eşya motor ve pompa teknik çalışması #88",
-    "alt": "Pendik beyaz eşya teknik servisinde motor, pompa veya mekanik parça incelemesi",
-    "caption": "Motor, pompa veya mekanik parça teknik incelemesi"
+    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-18.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #88",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 89,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-17.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #89",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/kurutma-makinesi-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #89",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 90,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-18.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #90",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-01.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #90",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 91,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-17.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #91",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-02.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #91",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 92,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-18.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #92",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-03.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #92",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 93,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-16.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #93",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-04.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #93",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 94,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-19.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #94",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-05.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #94",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 95,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-20.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #95",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-06.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #95",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 96,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-17.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #96",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-07.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #96",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 97,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-19.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #97",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-08.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #97",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 98,
-    "category": "beyaz-esya",
-    "category_label": "Beyaz Eşya Teknik Servis Çalışması",
-    "file": "assets/images/gercek-servis/beyaz-esya-gercek-servis-20.webp",
-    "seo_title": "Pendik beyaz eşya teknik servis çalışması #98",
-    "alt": "Pendik beyaz eşya teknik servis çalışması sırasında cihaz iç mekanizma incelemesi",
-    "caption": "Gerçek beyaz eşya teknik servis çalışması"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-09.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #98",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 99,
-    "category": "elektronik-kart",
-    "category_label": "Elektronik Kart ve Kontrol Sistemi",
-    "file": "assets/images/gercek-servis/elektronik-kart-gercek-servis-18.webp",
-    "seo_title": "Pendik beyaz eşya elektronik kart teknik incelemesi #99",
-    "alt": "Pendik beyaz eşya elektronik kart ve kontrol sistemi teknik incelemesi",
-    "caption": "Elektronik kart ve bağlantı sistemi teknik kontrolü"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-10.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #99",
+    "caption": "Gerçek teknik servis çalışması"
   },
   {
     "no": 100,
-    "category": "camasir-makinesi",
-    "category_label": "Çamaşır Makinesi Teknik Servisi",
-    "file": "assets/images/gercek-servis/camasir-makinesi-gercek-servis-21.webp",
-    "seo_title": "Pendik çamaşır makinesi teknik servis çalışması #100",
-    "alt": "Pendik çamaşır makinesi teknik servis çalışması sırasında iç mekanizma ve parça incelemesi",
-    "caption": "Çamaşır makinesi mekanik ve elektronik sistem incelemesi"
+    "file": "assets/images/gercek-servis/parca-motor-pompa-gercek-servis-11.webp",
+    "category": "gercek-servis",
+    "alt": "Gerçek teknik servis çalışması #100",
+    "caption": "Gerçek teknik servis çalışması"
   }
 ]
