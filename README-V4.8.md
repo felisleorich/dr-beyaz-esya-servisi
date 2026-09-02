@@ -1,15 +1,7 @@
-# DR Beyaz Eşya Servisi – V4.8
+# V4.8 güncellemesi
 
-Bu sürümde kullanıcının sağladığı 100 gerçek servis fotoğrafı siteye entegre edilmiştir.
-
-## Fotoğraf sınıflandırması
-- Buzdolabı: 11
-- Çamaşır Makinesi: 39
-- Bulaşık Makinesi: 10
-- Kurutma Makinesi: 7
-- Fırın & Ocak: 9
-- Derin Dondurucu: 5
-- Elektronik Kart / Teknik Parça: 18
-- Genel Teknik Servis: 1
-
-Fotoğrafta cihaz türü kesin olarak ayırt edilemeyen kart/parça kareleri cihaz adıyla etiketlenmemiştir. Klima ve kombi için bu arşivde doğrulanmış müşteri/servis fotoğrafı bulunmadığından mevcut V4.7 gerçek servis görselleri korunmuştur.
+- Kullanıcının sağladığı 100 orijinal servis fotoğrafı görsel düzenleme yapılmadan siteye eklendi.
+- Kurutma makinesi ve derin dondurucu hizmet kartları doğru gerçek fotoğraflarla güncellendi.
+- Gerçek Çalışmalar bölümünde elektronik kart ve renkli kablo grubu fotoğrafları kullanıldı.
+- Konum haritası işletme merkezine odaklanacak şekilde güncellendi; harita üzerinde tek merkez pin görseli kullanıldı.
+- Footer hizmetlerine Fırın & Ocak, Kombi ve Derin Dondurucu bağlantıları eklendi.
