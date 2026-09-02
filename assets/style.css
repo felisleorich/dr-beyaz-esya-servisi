@@ -84,3 +84,6 @@
 .service-card-image-alt{display:none}
 @media(max-width:900px){.location-grid{grid-template-columns:1fr}.location-map{min-height:320px}.location-grid h2{font-size:36px}}
 @media(max-width:650px){.location-strip-inner{min-height:48px;padding:7px 0;align-items:stretch}.location-label{white-space:normal;line-height:1.35;display:flex;align-items:center}.location-actions{gap:5px}.location-actions a{padding:7px 8px;font-size:10px}.location-actions a:last-child{display:none}.location-grid{gap:20px}.location-map{min-height:280px}.service-card-no-photo{height:160px}}
+
+/* V4.6 final visual polish */
+.service-photo{position:relative}.service-photo-caption{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(8,35,56,.88);color:#fff;padding:10px 12px;border-radius:10px;font-size:11px;font-weight:800;letter-spacing:.3px}.service-photo img{min-height:420px}.service-card img{background:#eaf2f5}.blog-card{}
