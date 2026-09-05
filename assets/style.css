@@ -115,3 +115,10 @@ img{max-width:100%;height:auto}.service-card{min-width:0}.service-card img{width
   .topline .wrap{gap:6px;font-size:9.5px}
   .lang-top{font-size:9.5px;padding:4px 7px}
 }
+
+
+/* V1.8 mobile language switch */
+.mobile-lang{display:none;align-items:center;justify-content:center;min-width:42px;height:38px;padding:0 9px;border:1px solid var(--line);border-radius:10px;background:#f4f8fa;color:var(--ink);font-weight:800;font-size:12px;text-decoration:none;line-height:1;}
+@media (max-width:780px){.mobile-lang{display:inline-flex;margin-left:auto;margin-right:6px}.header .nav{gap:8px}.header .menu{order:3}.header .mobile-lang{order:2}.header .logo{order:1}.header .call{display:none}}
+
+.image-note{margin:-4px 0 8px!important;font-size:11px!important;color:var(--muted)!important;font-style:italic}
