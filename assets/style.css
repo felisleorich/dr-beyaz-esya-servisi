@@ -122,3 +122,8 @@ img{max-width:100%;height:auto}.service-card{min-width:0}.service-card img{width
 @media (max-width:780px){.mobile-lang{display:inline-flex;margin-left:auto;margin-right:6px}.header .nav{gap:8px}.header .menu{order:3}.header .mobile-lang{order:2}.header .logo{order:1}.header .call{display:none}}
 
 .image-note{margin:-4px 0 8px!important;font-size:11px!important;color:var(--muted)!important;font-style:italic}
+
+/* V2.4 — Bölgesel hizmet kartı görselleri */
+.regional-service-grid .service-card img{height:150px;object-fit:cover;display:block}
+@media(max-width:1000px){.regional-service-grid .service-card img{height:165px}}
+@media(max-width:520px){.regional-service-grid .service-card img{height:180px}}
