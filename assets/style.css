@@ -127,3 +127,42 @@ img{max-width:100%;height:auto}.service-card{min-width:0}.service-card img{width
 .regional-service-grid .service-card img{height:150px;object-fit:cover;display:block}
 @media(max-width:1000px){.regional-service-grid .service-card img{height:165px}}
 @media(max-width:520px){.regional-service-grid .service-card img{height:180px}}
+
+
+/* V2.6 — Dark/Light mode + mobile UX */
+.theme-toggle{width:40px;height:40px;border:1px solid var(--line);border-radius:11px;background:var(--surface,#fff);color:var(--ink);display:inline-grid;place-items:center;cursor:pointer;font-size:18px;flex:0 0 auto;transition:.2s}
+.theme-toggle:hover{transform:translateY(-1px);border-color:var(--cyan)}
+.theme-toggle .sun{display:none}
+html[data-theme="dark"]{color-scheme:dark}
+html[data-theme="dark"] body{background:#081722;color:#e8f1f4}
+html[data-theme="dark"]{--ink:#e8f1f4;--ink2:#cce0e8;--bg:#0d202c;--line:#25404d;--muted:#a8bdc7;--white:#10232f;--surface:#10232f;--shadow:0 20px 60px rgba(0,0,0,.32)}
+html[data-theme="dark"] .header{background:rgba(8,23,34,.94);border-color:#25404d}
+html[data-theme="dark"] .logo,html[data-theme="dark"] .nav nav a{color:#e8f1f4}
+html[data-theme="dark"] .nav nav a:hover{color:#6fd8e4}
+html[data-theme="dark"] .menu{background:#132b39;color:#e8f1f4}
+html[data-theme="dark"] .theme-toggle{background:#132b39;color:#e8f1f4;border-color:#31505e}
+html[data-theme="dark"] .theme-toggle .moon{display:none}
+html[data-theme="dark"] .theme-toggle .sun{display:inline}
+html[data-theme="dark"] .hero{background:linear-gradient(120deg,#0c202d,#102d3b 58%,#123846)}
+html[data-theme="dark"] .hero-pills span,html[data-theme="dark"] .btn.secondary,html[data-theme="dark"] .service-card,html[data-theme="dark"] .review-box,html[data-theme="dark"] .area-card,html[data-theme="dark"] .contact-card,html[data-theme="dark"] .faq details{background:#10232f;color:#e8f1f4;border-color:#284551}
+html[data-theme="dark"] .hero-card{background:#10232f;color:#e8f1f4}
+html[data-theme="dark"] .hero-card span{color:#a8bdc7}
+html[data-theme="dark"] .page-hero,html[data-theme="dark"] .service-hero{background:radial-gradient(circle at 82% 16%,#163f4d,transparent 30%),linear-gradient(135deg,#0b1d28,#102a38)}
+html[data-theme="dark"] .soft{background:#0d202c}
+html[data-theme="dark"] .checklist div{background:#102b37}
+html[data-theme="dark"] .nav nav.open{background:#0c202d;border-color:#25404d}
+html[data-theme="dark"] .regional-service-grid .service-card{box-shadow:0 8px 24px rgba(0,0,0,.22)}
+html[data-theme="dark"] .service-card a,html[data-theme="dark"] .text-link,html[data-theme="dark"] .contact-card a{color:#69d5e2}
+html[data-theme="dark"] .section p{color:#a8bdc7}
+html[data-theme="dark"] .page-hero .lead,html[data-theme="dark"] .lead{color:#a8bdc7}
+html[data-theme="dark"] .location-strip{background:#061823}
+html[data-theme="dark"] .copyright{color:#78939f}
+html[data-theme="dark"] .image-note{color:#9db6c0!important}
+.process-section{background:var(--bg)}
+.process-note{max-width:720px;color:var(--muted);margin-top:0}
+.process-step{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 24px rgba(10,41,64,.05)}
+.process-step .num{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#dff3f6;color:#0f779c;font-weight:900;margin-bottom:10px}
+.process-step p{font-size:13px;margin-bottom:0}
+.regional-faq{margin-top:12px}
+@media(max-width:780px){.theme-toggle{width:38px;height:38px}.nav .theme-toggle{order:3}.header .menu{order:4}.header .mobile-lang{order:2;margin-left:auto}.nav nav.open{top:68px}.process-step{padding:19px}.process{gap:12px}}
+@media(max-width:520px){.theme-toggle{width:36px;height:36px;font-size:16px}.process-step{padding:18px}.regional-faq{grid-template-columns:1fr}}
