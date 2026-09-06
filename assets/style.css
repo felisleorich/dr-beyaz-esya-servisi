@@ -246,3 +246,19 @@ html[data-theme="dark"] .nav nav a{color:#c7d8df}
 html[data-theme="dark"] .nav nav a:hover{color:#74d9e5}
 html[data-theme="dark"] .call{background:#123648;border:1px solid #2d5668}
 @media(max-width:780px){.section-head{padding-left:0}}
+
+
+/* V3.3 — compact English service heroes + original header consistency */
+.header .brand{display:flex;align-items:center;gap:0;text-decoration:none;color:var(--ink);font-size:15px;letter-spacing:.4px;white-space:nowrap;font-weight:700}
+.header .brand-mark{display:inline-grid;place-items:center;width:39px;height:39px;background:linear-gradient(135deg,var(--cyan),var(--blue));color:#fff;border-radius:11px;margin-right:8px;font-weight:900;font-size:12px}
+.header .call-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:#fff;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:900;font-size:12px;white-space:nowrap}
+.header .call-btn:hover{background:#12384e}
+.page-hero > .service-hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.8fr);gap:48px;align-items:center}
+.page-hero > .service-hero .hero-photo{height:340px;min-height:340px;border-radius:24px}
+.page-hero > .service-hero .hero-photo img{height:340px;min-height:340px;object-fit:cover}
+.page-hero > .service-hero h1{font-size:clamp(42px,5vw,68px);max-width:760px}
+html[data-theme="dark"] .header .brand{color:#f1f7f9}
+html[data-theme="dark"] .header .call-btn{background:#123648;border:1px solid #2d5668}
+@media(max-width:1000px){.page-hero > .service-hero{grid-template-columns:1fr;gap:28px}.page-hero > .service-hero .hero-photo{height:300px;min-height:300px;max-width:760px}.page-hero > .service-hero .hero-photo img{height:300px;min-height:300px}}
+@media(max-width:780px){.header .call-btn{display:none}}
+@media(max-width:520px){.page-hero > .service-hero{gap:22px}.page-hero > .service-hero h1{font-size:40px}.page-hero > .service-hero .hero-photo{height:260px;min-height:260px;border-radius:20px}.page-hero > .service-hero .hero-photo img{height:260px;min-height:260px}}
