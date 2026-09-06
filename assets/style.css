@@ -166,3 +166,36 @@ html[data-theme="dark"] .image-note{color:#9db6c0!important}
 .regional-faq{margin-top:12px}
 @media(max-width:780px){.theme-toggle{width:38px;height:38px}.nav .theme-toggle{order:3}.header .menu{order:4}.header .mobile-lang{order:2;margin-left:auto}.nav nav.open{top:68px}.process-step{padding:19px}.process{gap:12px}}
 @media(max-width:520px){.theme-toggle{width:36px;height:36px;font-size:16px}.process-step{padding:18px}.regional-faq{grid-template-columns:1fr}}
+
+
+/* V2.7 — GitHub-inspired compact dark header + heading graphics + dark-mode hardening */
+.header{background:rgba(4,17,27,.97);border-bottom:1px solid #203846;box-shadow:0 4px 18px rgba(3,18,28,.12)}
+.logo{color:#f1f7f9}.nav nav a{color:#c7d8df}.nav nav a:hover{color:#74d9e5}
+.mobile-lang{background:#102733;color:#eaf4f7;border-color:#294451}
+.theme-toggle{background:#102733;color:#eef7fa;border-color:#294451}
+.call{background:#0f2f40;color:#fff;border:1px solid #285062}
+.call:hover{background:#143d50}
+.page-hero h1,.service-hero h1,.hero h1{position:relative}
+.page-hero h1:after,.service-hero h1:after,.hero h1:after{content:"";display:block;width:68px;height:4px;border-radius:4px;background:linear-gradient(90deg,#31b6c9,#147aa8);margin-top:18px}
+.section-head{position:relative;border-left:4px solid var(--cyan);padding-left:18px}
+.section-head h2{position:relative;padding-bottom:12px}
+.section-head h2:after{content:"";display:block;width:42px;height:3px;border-radius:3px;background:var(--cyan);margin-top:12px}
+html[data-theme="dark"] .header{background:rgba(3,12,19,.98);border-color:#1e3540}
+html[data-theme="dark"] .mobile-lang,html[data-theme="dark"] .theme-toggle{background:#0e202b;color:#eef7fa;border-color:#294451}
+html[data-theme="dark"] .call{background:#123648;border-color:#2d5668}
+html[data-theme="dark"] .crumb{color:#8da7b2}
+html[data-theme="dark"] .hero-pills span,html[data-theme="dark"] .tags span{background:#0e222e;color:#cfe1e7;border-color:#294653}
+html[data-theme="dark"] .benefits div[style*="background:#fff"],html[data-theme="dark"] [style*="background:#fff"]{background:#10232f!important;color:#e8f1f4}
+html[data-theme="dark"] .benefits span{color:#a8bdc7!important}
+html[data-theme="dark"] .gallery figure{background:#10232f}
+html[data-theme="dark"] .gallery figcaption{color:#a8bdc7}
+html[data-theme="dark"] .section-head{border-color:#31b6c9}
+@media(max-width:780px){.header{position:sticky}.nav{height:68px}.section-head{padding-left:14px}.page-hero h1:after,.service-hero h1:after,.hero h1:after{width:54px;height:3px;margin-top:14px}}
+
+.service-tech-strip{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.service-tech-strip figure{margin:0;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 24px rgba(10,41,64,.06)}
+.service-tech-strip img{display:block;width:100%;height:360px;object-fit:cover}
+.service-tech-strip figcaption{padding:14px 16px;font-size:13px;font-weight:800;color:var(--ink)}
+html[data-theme="dark"] .service-tech-strip figure{background:#10232f}
+html[data-theme="dark"] .service-tech-strip figcaption{color:#e8f1f4}
+@media(max-width:700px){.service-tech-strip{grid-template-columns:1fr}.service-tech-strip img{height:300px}}
