@@ -229,3 +229,20 @@ html[data-theme="dark"] .regional-hero-gallery figure{border-color:#294653;box-s
 html[data-theme="dark"] .about-highlight,html[data-theme="dark"] .area-card{box-shadow:none}
 @media(max-width:900px){.english-hero-grid{grid-template-columns:1fr;gap:34px}.english-hero-photo img{height:360px}.area-cards{grid-template-columns:1fr}}
 @media(max-width:520px){.english-hero{padding-top:48px;padding-bottom:52px}.english-hero-photo img{height:280px;border-radius:20px}.about-highlight{padding:22px}.area-card{padding:18px}.area-card b{font-size:20px}}
+
+/* V3.2 — Restore original site heading/header graphics and keep dark mode functional */
+.header{background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);box-shadow:none}
+.logo{color:var(--ink)}
+.nav nav a{color:#38525f}
+.nav nav a:hover{color:var(--blue)}
+.call{background:var(--ink);color:#fff;border:0}
+.call:hover{background:var(--ink)}
+.page-hero h1:after,.service-hero h1:after,.hero h1:after{display:none!important}
+.section-head{border-left:0;padding-left:0}
+.section-head h2:after{display:none!important}
+html[data-theme="dark"] .header{background:rgba(3,12,19,.98);border-color:#1e3540;box-shadow:none}
+html[data-theme="dark"] .logo{color:#f1f7f9}
+html[data-theme="dark"] .nav nav a{color:#c7d8df}
+html[data-theme="dark"] .nav nav a:hover{color:#74d9e5}
+html[data-theme="dark"] .call{background:#123648;border:1px solid #2d5668}
+@media(max-width:780px){.section-head{padding-left:0}}
