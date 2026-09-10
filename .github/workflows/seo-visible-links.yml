@@ -1,0 +1,47 @@
+name: SEO visible error-code links
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  update-links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add visible links to new error-code pages
+        shell: python
+        run: |
+          from pathlib import Path
+
+          links = '''<section class="section" id="yeni-hata-kodlari"><div class="wrap"><div class="section-head"><span class="eyebrow">YENİ HATA KODLARI</span><h2>Marka + hata kodu rehberleri</h2><p>Yeni eklenen yüksek arama niyetli hata kodu sayfalarına doğrudan ulaşın.</p></div><div class="service-grid"><article class="service-card"><div><small>ARÇELİK</small><h3>E5 Hata Kodu</h3><p>Çamaşır makinesi E5 kodu ve pompa/tahliye kontrolleri.</p><a href="arcelik-e5-hata-kodu.html">Arçelik E5'i incele →</a></div></article><article class="service-card"><div><small>BEKO</small><h3>E5 Hata Kodu</h3><p>Beko çamaşır makinesi E5 kodu ve pompa/tahliye kontrolleri.</p><a href="beko-e5-hata-kodu.html">Beko E5'i incele →</a></div></article><article class="service-card"><div><small>BOSCH</small><h3>E18 Hata Kodu</h3><p>Çamaşır makinesi E18 ve su boşaltma problemi.</p><a href="bosch-e18-hata-kodu.html">Bosch E18'i incele →</a></div></article><article class="service-card"><div><small>SIEMENS</small><h3>E18 Hata Kodu</h3><p>Çamaşır makinesi E18 ve tahliye problemi.</p><a href="siemens-e18-hata-kodu.html">Siemens E18'i incele →</a></div></article><article class="service-card"><div><small>SAMSUNG</small><h3>4C Hata Kodu</h3><p>Çamaşır makinesi 4C ve su alma problemi.</p><a href="samsung-4c-hata-kodu.html">Samsung 4C'yi incele →</a></div></article></div></div></section>'''
+
+          targets = ["index.html", "hata-kodlari.html", "arcelik-hata-kodlari.html", "beko-hata-kodlari.html", "bosch-hata-kodlari.html", "siemens-hata-kodlari.html", "samsung-hata-kodlari.html"]
+          marker = 'id="yeni-hata-kodlari"'
+          for name in targets:
+              p = Path(name)
+              if not p.exists():
+                  continue
+              text = p.read_text(encoding="utf-8")
+              if marker in text:
+                  continue
+              # On brand pages, make links local to the page root; on root pages the same relative links work.
+              pos = text.rfind("</main>")
+              if pos == -1:
+                  pos = text.rfind("</body>")
+              if pos == -1:
+                  continue
+              text = text[:pos] + links + text[pos:]
+              p.write_text(text, encoding="utf-8")
+
+      - name: Commit generated SEO link updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html hata-kodlari.html arcelik-hata-kodlari.html beko-hata-kodlari.html bosch-hata-kodlari.html siemens-hata-kodlari.html samsung-hata-kodlari.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "SEO: yeni hata kodu sayfalarini site icinde gorunur yap"
+          git push
