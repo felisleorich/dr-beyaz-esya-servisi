@@ -1,0 +1,10 @@
+.location-card{border:1px solid #c9dfe6;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 18px 48px #1236471a;min-width:0}
+.location-card-head{display:flex;gap:14px;align-items:center;padding:20px 24px;background:#f0f8fa;color:#103347}
+.location-monogram{display:grid;place-items:center;flex:none;width:46px;height:46px;border-radius:14px;background:#107e9b;color:#fff;font-size:19px;font-weight:900}
+.location-card-head strong{display:block;font-size:17px;line-height:1.4}.location-card-head div>span{display:block;font-size:13px;color:#486572;margin-top:3px}
+.location-map-stage{height:340px}.location-map-stage .location-map{display:block;width:100%;height:100%;min-height:0;border:0;border-radius:0;box-shadow:none}
+.location-card-foot{padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}.location-card-foot address{font-style:normal;line-height:1.65;color:#244957;margin-top:6px}.location-card-foot .btn{flex:none}
+.location-areas{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0}.location-areas a{padding:9px 16px;border:1px solid #b7d4df;border-radius:24px;background:#edf8fa;color:#155269;font-weight:700}.location-areas a:hover{background:#d6edf2}
+.location-card a:focus-visible,.location-areas a:focus-visible{outline:3px solid #d97706;outline-offset:3px}
+html[data-theme="dark"] .location-card{background:#102431;border-color:#365361}html[data-theme="dark"] .location-card-head{background:#153340;color:#eef7fa}html[data-theme="dark"] .location-card-head div>span,html[data-theme="dark"] .location-card-foot address{color:#c1d6df}html[data-theme="dark"] .location-areas a{background:#153340;color:#a5e5ed;border-color:#365d6c}html[data-theme="dark"] .location-areas a:hover{background:#204858}
+@media(max-width:650px){.location-card-head,.location-card-foot{padding:18px}.location-map-stage{height:290px}.location-card-foot{align-items:stretch;flex-direction:column}.location-card-foot .btn{text-align:center}.location-card-head strong{font-size:16px}.hero .eyebrow{line-height:1.7}}
