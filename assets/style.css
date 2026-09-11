@@ -158,6 +158,11 @@ html[data-theme="dark"] a:hover{color:#a0edf4}
 html[data-theme="dark"] .eyebrow,html[data-theme="dark"] .error-brand,html[data-theme="dark"] .error-stat,html[data-theme="dark"] .service-card small{color:#6fd8e4!important}
 html[data-theme="dark"] .lead,html[data-theme="dark"] .section p,html[data-theme="dark"] .page-hero .lead,html[data-theme="dark"] .process-note{color:#b8cdd6!important}
 html[data-theme="dark"] .section,html[data-theme="dark"] .error-main,html[data-theme="dark"] .error-sources,html[data-theme="dark"] .service-review{background:#0b1d28!important}
+html[data-theme="dark"] .stats,html[data-theme="dark"] .stats-grid{background:#0b1d28!important;color:#eef7fa!important}
+html[data-theme="dark"] .stats-grid>div{background:#0b1d28!important;border-color:#294653!important}
+html[data-theme="dark"] .stats-grid b{color:#6fd8e4!important}
+html[data-theme="dark"] .stats-grid span{color:#b8cdd6!important}
+html[data-theme="dark"] .location-section,html[data-theme="dark"] .location-section p{color:#d7e6eb}
 html[data-theme="dark"] .soft,html[data-theme="dark"] .process-section,html[data-theme="dark"] .error-info,html[data-theme="dark"] .real-work-section{background:#0d202c!important}
 html[data-theme="dark"] .error-page{background:#081722!important}
 html[data-theme="dark"] .error-hero,html[data-theme="dark"] .page-hero,html[data-theme="dark"] .service-hero,html[data-theme="dark"] .review-page-hero{background:linear-gradient(135deg,#0b1d28,#102b39)!important;border-color:#25404d!important}
