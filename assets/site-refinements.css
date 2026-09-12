@@ -17,6 +17,7 @@ html[data-theme="dark"] .refinement-page{--surface:#102431;--soft-surface:#122e3
 .refinement-page .service-card h3{font-size:21px;line-height:1.35;margin:0;color:var(--heading)}
 .refinement-page .service-card p{font-size:14px;line-height:1.65;color:var(--copy);margin:0 0 12px}
 .refinement-page .service-card a{margin-top:auto;color:var(--accent)}
+.side-contact a.btn.white{color:#55bbdd}
 .refinement-page .service-card img{height:195px;width:100%;object-fit:cover;flex:none}
 .photo-credit{font-size:11px;line-height:1.5;color:var(--copy);display:block;margin:8px 0 0}
 .refinement-page .service-card>.photo-credit{padding:8px 22px 0}
