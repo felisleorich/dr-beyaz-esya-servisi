@@ -75,10 +75,15 @@
     var method = href.indexOf('tel:') === 0 ? 'phone' : (href.indexOf('wa.me/') !== -1 ? 'whatsapp' : '');
     if (!method) return;
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({
-      event: 'contact_click',
+    var eventData = {
       contact_method: method,
       contact_page: window.location.pathname
+    };
+    window.dataLayer.push({
+      event: 'contact_click',
+      contact_method: eventData.contact_method,
+      contact_page: eventData.contact_page
     });
+    if (typeof window.gtag === 'function') window.gtag('event', 'contact_click', eventData);
   }, { passive: true });
 })();
