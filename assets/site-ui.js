@@ -5,6 +5,7 @@
   window.drSiteUI = true;
 
   var root = document.documentElement;
+  var english = root.lang === 'en';
   var saved;
   try { saved = localStorage.getItem('dr-theme'); } catch (e) {}
   var preferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -23,8 +24,9 @@
       if (theme) {
         var dark = value === 'dark';
         theme.setAttribute('aria-pressed', String(dark));
-        theme.setAttribute('aria-label', dark ? 'Açık moda geç' : 'Koyu moda geç');
-        theme.setAttribute('title', dark ? 'Açık moda geç' : 'Koyu moda geç');
+        var label = english ? (dark ? 'Switch to light mode' : 'Switch to dark mode') : (dark ? 'Açık moda geç' : 'Koyu moda geç');
+        theme.setAttribute('aria-label', label);
+        theme.setAttribute('title', label);
       }
     }
     updateTheme(root.getAttribute('data-theme'), false);
@@ -38,7 +40,7 @@
     function setOpen(open, returnFocus) {
       nav.classList.toggle('open', open);
       menu.setAttribute('aria-expanded', String(open));
-      menu.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+      menu.setAttribute('aria-label', english ? (open ? 'Close menu' : 'Open menu') : (open ? 'Menüyü kapat' : 'Menüyü aç'));
       if (returnFocus) menu.focus();
     }
     setOpen(false);
@@ -53,7 +55,7 @@
       } else if (!menu.contains(event.target)) setOpen(false);
     });
     if (window.matchMedia) {
-      var desktop = window.matchMedia('(min-width: 781px)');
+      var desktop = window.matchMedia('(min-width: 1241px)');
       var closeOnDesktop = function (event) { if (event.matches) setOpen(false); };
       if (desktop.addEventListener) desktop.addEventListener('change', closeOnDesktop);
       else if (desktop.addListener) desktop.addListener(closeOnDesktop);
