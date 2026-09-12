@@ -74,15 +74,21 @@
     var href = link.getAttribute('href') || '';
     var method = href.indexOf('tel:') === 0 ? 'phone' : (href.indexOf('wa.me/') !== -1 ? 'whatsapp' : '');
     if (!method) return;
+    var placement = link.closest('.mobile-actions') ? 'mobile_bar' :
+      (link.closest('.cta') ? 'cta' :
+        (link.closest('.hero-actions') ? 'hero' :
+          (link.closest('.side-contact') ? 'side_contact' : 'other')));
     window.dataLayer = window.dataLayer || [];
     var eventData = {
       contact_method: method,
-      contact_page: window.location.pathname
+      contact_page: window.location.pathname,
+      contact_placement: placement
     };
     window.dataLayer.push({
       event: 'contact_click',
       contact_method: eventData.contact_method,
-      contact_page: eventData.contact_page
+      contact_page: eventData.contact_page,
+      contact_placement: eventData.contact_placement
     });
     if (typeof window.gtag === 'function') window.gtag('event', 'contact_click', eventData);
   }, { passive: true });
