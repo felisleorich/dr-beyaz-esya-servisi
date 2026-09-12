@@ -62,4 +62,6 @@ html[data-theme="dark"] .service-journey .process>div{background:#102431;border-
 .english-home .review-source{background:var(--soft-surface);border:1px solid var(--border);border-left:3px solid var(--accent);color:var(--copy)!important;text-align:left;line-height:1.75}
 .english-home .review-source a{color:var(--accent)!important;text-decoration:underline;text-underline-offset:3px}
 .english-home .cta a.btn.white[href^="tel:"]{color:#1e9dc8}
+/* Keep the phone CTA readable when the dark theme changes the ink token. */
+html[data-theme="dark"] .cta a.btn.white[href^="tel:"]{color:#0a2940!important}
 @media(min-width:901px){.english-home .area-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
