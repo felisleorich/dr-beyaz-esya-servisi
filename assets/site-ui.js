@@ -64,3 +64,21 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+/* Keep phone and WhatsApp clicks measurable when an analytics dataLayer is configured. */
+(function () {
+  'use strict';
+  document.addEventListener('click', function (event) {
+    var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    var method = href.indexOf('tel:') === 0 ? 'phone' : (href.indexOf('wa.me/') !== -1 ? 'whatsapp' : '');
+    if (!method) return;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'contact_click',
+      contact_method: method,
+      contact_page: window.location.pathname
+    });
+  }, { passive: true });
+})();
