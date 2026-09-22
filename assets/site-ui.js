@@ -65,31 +65,78 @@
   else init();
 })();
 
-/* Keep phone and WhatsApp clicks measurable when an analytics dataLayer is configured. */
+/*
+ * Analytics bootstrap.
+ * To activate GA4, set window.DR_GA4_ID to the site's Measurement ID (G-XXXXXXXXXX)
+ * before this file loads, or add:
+ * <meta name="ga4-measurement-id" content="G-XXXXXXXXXX">
+ */
 (function () {
   'use strict';
+
+  function getMeasurementId() {
+    if (window.DR_GA4_ID && /^G-[A-Z0-9]+$/i.test(window.DR_GA4_ID)) return window.DR_GA4_ID;
+    var meta = document.querySelector('meta[name="ga4-measurement-id"]');
+    var value = meta ? (meta.getAttribute('content') || '').trim() : '';
+    return /^G-[A-Z0-9]+$/i.test(value) ? value : '';
+  }
+
+  var measurementId = getMeasurementId();
+  window.dataLayer = window.dataLayer || [];
+
+  if (measurementId && typeof window.gtag !== 'function') {
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', measurementId, { send_page_view: true });
+
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(measurementId);
+    document.head.appendChild(script);
+  }
+})();
+
+/* Track phone and WhatsApp conversion clicks with page and placement context. */
+(function () {
+  'use strict';
+
+  function getPlacement(link) {
+    if (link.closest('.mobile-actions')) return 'mobile_bar';
+    if (link.closest('.cta')) return 'cta';
+    if (link.closest('.hero-actions')) return 'hero';
+    if (link.closest('.side-contact')) return 'side_contact';
+    if (link.closest('.topline')) return 'topline';
+    if (link.classList.contains('call')) return 'header_call';
+    return 'other';
+  }
+
+  function sendEvent(eventName, data) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', eventName, data);
+      return;
+    }
+    window.dataLayer = window.dataLayer || [];
+    var payload = { event: eventName };
+    Object.keys(data).forEach(function (key) { payload[key] = data[key]; });
+    window.dataLayer.push(payload);
+  }
+
   document.addEventListener('click', function (event) {
     var link = event.target && event.target.closest ? event.target.closest('a[href]') : null;
     if (!link) return;
+
     var href = link.getAttribute('href') || '';
     var method = href.indexOf('tel:') === 0 ? 'phone' : (href.indexOf('wa.me/') !== -1 ? 'whatsapp' : '');
     if (!method) return;
-    var placement = link.closest('.mobile-actions') ? 'mobile_bar' :
-      (link.closest('.cta') ? 'cta' :
-        (link.closest('.hero-actions') ? 'hero' :
-          (link.closest('.side-contact') ? 'side_contact' : 'other')));
-    window.dataLayer = window.dataLayer || [];
+
     var eventData = {
       contact_method: method,
       contact_page: window.location.pathname,
-      contact_placement: placement
+      contact_placement: getPlacement(link),
+      contact_label: (link.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80)
     };
-    window.dataLayer.push({
-      event: 'contact_click',
-      contact_method: eventData.contact_method,
-      contact_page: eventData.contact_page,
-      contact_placement: eventData.contact_placement
-    });
-    if (typeof window.gtag === 'function') window.gtag('event', 'contact_click', eventData);
+
+    sendEvent('contact_click', eventData);
+    sendEvent(method === 'phone' ? 'phone_click' : 'whatsapp_click', eventData);
   }, { passive: true });
 })();
