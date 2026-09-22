@@ -87,3 +87,36 @@ Sıradaki ölçüm:
 - En az 7-14 günlük yeni veri geldikten sonra aynı Son 28 gün raporunu tekrar dışa aktar.
 - Özellikle `hizmetler.html` CTR/konum ve anasayfanın yüksek niyetli sorgularını izle.
 - Query→page eşleşmesini netleştirmek için Search Console'da kritik sorgulara tek tek filtre uygulayıp Sayfalar sekmesini kontrol et.
+
+
+## 2026-09-23 query→page doğrulaması: pendik buzdolabı servisi
+Search Console ekran doğrulaması:
+- Sorgu: `pendik buzdolabı servisi`
+- Son 28 gün.
+- Anasayfa: 55 gösterim, 0 tıklama, CTR %0, ortalama konum 1.2.
+- `pendik-hizmetler.html`: 1 gösterim, 0 tıklama, ortalama konum 90.
+- `buzdolabi-servisi.html` bu sorguda görünür satır olarak çıkmadı.
+
+Yorum:
+- Google sorguyu esas olarak anasayfayla eşleştiriyor; özel cihaz sayfasına yönlendirme sinyali zayıf.
+- Anasayfanın title/meta alanı değiştirilmedi; mevcut sıralama sinyali korunarak düşük riskli iç bağlantı ve sayfa gövdesi optimizasyonu yapıldı.
+
+Uygulanan değişiklikler:
+- `buzdolabi-servisi.html`: H1 `Pendik Buzdolabı Servisi` yapıldı; ilk paragraf Pendik başta olmak üzere Kurtköy, Tuzla ve Kartal hizmet kapsamını doğrulanmış şekilde belirtiyor.
+- `index.html`: buzdolabı kartındaki genel CTA `Pendik Buzdolabı Servisi →` oldu.
+- `pendik-beyaz-esya-servisi.html`: CTA `Pendik Buzdolabı Servisi →` oldu.
+- `pendik-hizmetler.html`: CTA `Pendik Buzdolabı Servisi →` oldu.
+- `hizmetler.html`: genel CTA `Buzdolabı Servisi →` oldu.
+- Title/meta alanları bu adımda tekrar değiştirilmedi.
+
+Commitler:
+- `1389d9475c5be9a25ba1e5cf7cae3e6da9a2800b` — Clarify Pendik intent on refrigerator service page
+- `8b13bfebbb97fe4169ee62b7f337eae4efd3b589`
+- `1abf92bd2ca7193fde6424a1a939e3f3aee79c46`
+- `63a966289b6dad2528887dc5eac76209cac5dd40`
+- `bec01376874c1dfbf1a8eb1311672e215a03d8c2` — internal anchor updates
+
+Kontrol:
+- Güncel main dosyaları yeniden okundu.
+- H1 ve tüm hedef anchor metinleri doğrulandı.
+- Sonraki ölçümden önce aynı sorgu için yeni title/meta değişikliği yapılmayacak.
