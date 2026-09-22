@@ -55,3 +55,35 @@ Doğrulama:
 - CSS kuralı main dalında tekrar okundu ve `align-items:start` mevcut.
 - Anasayfada ilgili üç çamaşır makinesi görselinin her biri bir kez kullanılıyor.
 - Yeni görsellerin intrinsic boyutları doğrulandı: servis-20 = 1200×1600, servis-23 = 1600×1200.
+
+
+## 2026-09-23 Search Console manuel dışa aktarma analizi
+Kaynak:
+- Kullanıcının Google Search Console'dan dışa aktardığı `drbeyazesyaservisi.com-Performance-on-Search-2026-09-23.xlsx`.
+- Filtre: Web, Son 28 gün.
+- Ekranda görünen son veri tarihi: 2026-09-20.
+
+Özet:
+- 31 tıklama, yaklaşık 2.26 bin gösterim, CTR %1.4, ortalama konum 11.4.
+- Anasayfa: 30 tıklama / 1755 gösterim / CTR %1.71 / ortalama konum 2.62. Tıklamaların neredeyse tamamı anasayfada.
+- Mobil: 23 tıklama / 1832 gösterim / CTR %1.26 / ortalama konum 5.03.
+- Yüksek niyetli sıfır tıklamalı sorgular arasında: `pendik buzdolabı servisi` (56 gösterim, konum 2.8), `tuzla buzdolabı tamircisi` (43, 1.19), `pendik beyaz eşya servisi` (42, 5.4), `pendik buzdolabı tamircisi` (33, 1.52), `çamaşır makinesi tamircisi` (33, 1.52).
+- Sorgu dışa aktarımı toplam tıklamaların yalnızca bir bölümünü satır bazında gösteriyor; kararlar yalnızca tek sorguya değil sayfa + sorgu desenine göre alındı.
+- `hizmetler.html`: 36 gösterim / 0 tıklama / ortalama konum 7.92. Mevcut title çok genel, description ise yalnız Pendik ve Kurtköy diyordu; işletmenin güncel 4 bölgesiyle tutarsızdı.
+
+Uygulanan değişiklik:
+- `hizmetler.html` title: `Beyaz Eşya Servisi Hizmetleri | Pendik, Kurtköy, Tuzla, Kartal`
+- Description: Pendik, Kurtköy, Tuzla ve Kartal ile ana cihaz kategorilerini açıkça kapsayacak şekilde güncellendi.
+- OG/Twitter metadata ve CollectionPage adı aynı metinle tutarlı hale getirildi.
+- Commit: `9c3748fe1ea79b6ad5ef5eb66b3229c860a21e2f`
+
+Bilerek değiştirilmedi:
+- Anasayfa title/meta: 2026-09-11'de yakın zamanda SEO düzenlemesi yapılmış ve şu anda 30/31 tıklamayı topluyor; yeni etki ölçülmeden yeniden değiştirilmedi.
+- Cihaz sayfası title'ları: 2026-09-12'de kısaltılmış; henüz tekrar oynanmadı.
+- Pendik/Tuzla/Kurtköy bölge sayfaları: 2026-09-10'da güçlendirilmiş; query→page eşleşmesi olmadan yeniden değiştirilmedi.
+- `*-hizmetler.html` ve `*-beyaz-esya-servisi.html` çiftlerinin olası sorgu çakışması not edildi; query→page verisi olmadan canonical/merge yapılmadı.
+
+Sıradaki ölçüm:
+- En az 7-14 günlük yeni veri geldikten sonra aynı Son 28 gün raporunu tekrar dışa aktar.
+- Özellikle `hizmetler.html` CTR/konum ve anasayfanın yüksek niyetli sorgularını izle.
+- Query→page eşleşmesini netleştirmek için Search Console'da kritik sorgulara tek tek filtre uygulayıp Sayfalar sekmesini kontrol et.
