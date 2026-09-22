@@ -200,3 +200,11 @@ Kontrol:
 - Canonical ve hreflang URL'leri birbirleriyle uyumlu.
 - Bu iki sayfada `index.html` alias href kalmadı.
 - Yeni veri gelmeden bu yeni cihaz H1/iç bağlantı düzenlemeleri tekrar değiştirilmeyecek.
+
+
+### High-intent sayfalarda /index.html iç link konsolidasyonu
+- GSC sayfa raporundaki `/index.html` alias görünürlüğünü azaltmak için, yalnız bu gece üzerinde çalışılan yüksek niyetli servis ve bölge sayfalarında ana sayfa iç linkleri canonical `/` URL'sine çevrildi.
+- Değişen 11 sayfa: `hizmetler.html`, `pendik-hizmetler.html`, `pendik-beyaz-esya-servisi.html`, `buzdolabi-servisi.html`, `camasir-makinesi-servisi.html`, `bulasik-makinesi-servisi.html`, `derin-dondurucu-servisi.html`, `firin-ocak-servisi.html`, `tuzla-hizmetler.html`, `tuzla-beyaz-esya-servisi.html`, `tuzla-buzdolabi-servisi.html`.
+- Her sayfada 3 adet `href="index.html"` bağlantısı `href="/"` olarak değişti.
+- Telefon ve WhatsApp linklerinin değişiklik sonrası mevcut olduğu doğrulandı.
+- Tek commit: `b8760c7fcf628834a2b46ff72e9a61e674e01a2a` — Consolidate canonical home links on service pages.
