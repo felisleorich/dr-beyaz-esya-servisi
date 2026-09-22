@@ -34,3 +34,24 @@
 ## Sıradaki adım
 - GSC erişimi geldiğinde aynı raporu aynı gün tekrarlamadan 28 günlük query+page verisiyle yüksek niyetli bölge/cihaz sayfalarını önceliklendir.
 - Yeni veri gelene kadar title/meta metinlerini tekrar değiştirme.
+
+
+## 2026-09-23 anasayfa görsel düzeltmesi
+Sorun:
+- Anasayfadaki "Gerçek Servis Çalışmaları" kartlarında CSS Grid satır yüksekliği nedeniyle kısa kartlar satır yüksekliğine esniyor ve figcaption altında boş gri alan görünüyordu.
+- Çamaşır makinesi kontrol paneli fotoğrafı anasayfada birden fazla görünür alanda tekrar ediyordu.
+
+Değişiklikler:
+- `assets/site-refinements.css`: `.real-work-grid` için `align-items:start` eklendi; kartların satır yüksekliğine zorla esnemesi engellendi.
+- `index.html`: Gerçek çalışma kartındaki tekrar eden `camasir-makinesi-servis-19.jpeg` yerine gerçek servis arşivindeki `camasir-makinesi-servis-20.jpeg` kullanıldı.
+- `index.html`: Çamaşır makinesi hizmet kartı da ayrı bir gerçek servis görseli olan `camasir-makinesi-servis-23.jpeg` ile değiştirildi. Böylece `servis-19`, `servis-20` ve `servis-23` anasayfada birer kez kullanılıyor.
+
+Commitler:
+- `75dbe6ef53d42627a6d603e66ab58c6b6716d306` — Fix uneven real-work card stretching
+- `ba97db3f7786c9c6a5047ce80e4b919c90c6f338` — Replace duplicate homepage service photo
+- `547a4836362d65f9c90b42396e1e0ac97422b7c5` — Use distinct washing machine photo on homepage
+
+Doğrulama:
+- CSS kuralı main dalında tekrar okundu ve `align-items:start` mevcut.
+- Anasayfada ilgili üç çamaşır makinesi görselinin her biri bir kez kullanılıyor.
+- Yeni görsellerin intrinsic boyutları doğrulandı: servis-20 = 1200×1600, servis-23 = 1600×1200.
