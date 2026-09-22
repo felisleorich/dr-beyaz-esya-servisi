@@ -65,27 +65,39 @@
   else init();
 })();
 
-/*
- * Analytics bootstrap.
- * To activate GA4, set window.DR_GA4_ID to the site's Measurement ID (G-XXXXXXXXXX)
- * before this file loads, or add:
- * <meta name="ga4-measurement-id" content="G-XXXXXXXXXX">
- */
+/* Analytics bootstrap with a persistent internal/test-device exclusion. */
 (function () {
   'use strict';
 
-  function getMeasurementId() {
-    if (window.DR_GA4_ID && /^G-[A-Z0-9]+$/i.test(window.DR_GA4_ID)) return window.DR_GA4_ID;
-    var meta = document.querySelector('meta[name="ga4-measurement-id"]');
-    var value = meta ? (meta.getAttribute('content') || '').trim() : '';
-    if (/^G-[A-Z0-9]+$/i.test(value)) return value;
-    return 'G-LT4G21Y9VE';
+  var measurementId = 'G-LT4G21Y9VE';
+  var storageKey = 'dr-analytics-exclude';
+
+  function updateInternalFlagFromUrl() {
+    try {
+      var url = new URL(window.location.href);
+      var value = url.searchParams.get('dr_internal');
+      if (value === '1') localStorage.setItem(storageKey, '1');
+      if (value === '0') localStorage.removeItem(storageKey);
+      if (value === '1' || value === '0') {
+        url.searchParams.delete('dr_internal');
+        history.replaceState(null, '', url.pathname + (url.search ? url.search : '') + url.hash);
+      }
+    } catch (e) {}
   }
 
-  var measurementId = getMeasurementId();
-  window.dataLayer = window.dataLayer || [];
+  function isInternalDevice() {
+    try { return localStorage.getItem(storageKey) === '1'; }
+    catch (e) { return false; }
+  }
 
-  if (measurementId && typeof window.gtag !== 'function') {
+  updateInternalFlagFromUrl();
+  window.DR_ANALYTICS_DISABLED = isInternalDevice();
+  window['ga-disable-' + measurementId] = !!window.DR_ANALYTICS_DISABLED;
+
+  if (window.DR_ANALYTICS_DISABLED) return;
+
+  window.dataLayer = window.dataLayer || [];
+  if (typeof window.gtag !== 'function') {
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
     window.gtag('config', measurementId, { send_page_view: true });
@@ -112,6 +124,7 @@
   }
 
   function sendEvent(eventName, data) {
+    if (window.DR_ANALYTICS_DISABLED) return;
     if (typeof window.gtag === 'function') {
       window.gtag('event', eventName, data);
       return;
