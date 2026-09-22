@@ -78,7 +78,8 @@
     if (window.DR_GA4_ID && /^G-[A-Z0-9]+$/i.test(window.DR_GA4_ID)) return window.DR_GA4_ID;
     var meta = document.querySelector('meta[name="ga4-measurement-id"]');
     var value = meta ? (meta.getAttribute('content') || '').trim() : '';
-    return /^G-[A-Z0-9]+$/i.test(value) ? value : '';
+    if (/^G-[A-Z0-9]+$/i.test(value)) return value;
+    return 'G-LT4G21Y9VE';
   }
 
   var measurementId = getMeasurementId();
