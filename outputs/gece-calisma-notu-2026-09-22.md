@@ -148,3 +148,55 @@ Kontrol:
 - Güncel main dosyaları tekrar okundu.
 - Yeni title/description ve hedef anchor metinleri doğrulandı.
 - Bu sorgu için yeni veri gelmeden tekrar title/meta değişikliği yapılmayacak.
+
+
+## 2026-09-23 gece başlangıç — mevcut GSC dışa aktarımından ek optimizasyonlar
+Veri kaynağı:
+- Aynı manuel Search Console dışa aktarımı kullanıldı; yeni rapor sorgulanmadı.
+- Son 28 gün sorgularında yüksek niyetli ve sıralaması güçlü fakat tıklamasız kümeler:
+  - `çamaşır makinesi tamircisi`: 33 gösterim, konum 1.52
+  - `çamaşır makine tamircisi`: 13 gösterim, konum 1.54
+  - `çamaşır makinesi servisi`: 9 gösterim, konum 1.44
+  - `bulaşık makinesi tamircisi`: 13 gösterim, konum 1.46
+  - `derin dondurucu tamircisi`: 13 gösterim, konum 1.23
+  - `fırın tamircisi`: 5 gösterim, konum 2.0
+  - `set üstü ocak tamircisi`: 4 gösterim, konum 1.25
+
+Uygulanan düşük riskli sayfa sinyalleri:
+- Yakın zamanda değişen title/meta alanlarına yeniden dokunulmadı.
+- `camasir-makinesi-servisi.html` H1 = `Pendik Çamaşır Makinesi Servisi`; ilk paragraf Pendik ve doğrulanmış hizmet bölgeleriyle birlikte doğal `tamiri` niyetini açıklıyor.
+- `bulasik-makinesi-servisi.html` H1 = `Pendik Bulaşık Makinesi Servisi`.
+- `derin-dondurucu-servisi.html` H1 = `Pendik Derin Dondurucu Servisi`.
+- `firin-ocak-servisi.html` H1 = `Pendik Fırın ve Ocak Servisi`.
+- Anasayfa, Pendik yerel sayfası ve Pendik hizmet hub'ındaki genel `Hizmeti/Servis bilgilerini incele` anchor'ları ilgili cihaz servis adlarıyla değiştirildi.
+- Genel `hizmetler.html` sayfasındaki dört cihaz CTA'sı açıklayıcı servis adlarına dönüştürüldü.
+- Telefon, WhatsApp ve mobil sabit iletişim çubuklarının bu sayfalarda mevcut olduğu tekrar doğrulandı.
+
+Commitler:
+- `7840ed6d755dcc3becadfb39571f6081848740b6`
+- `79fc4112019000c4f9ae0d07e4e379ee1e94d2be`
+- `932be0f2c20416bfd8f8475cfc0ea00721e2fd2b`
+- `cc948f11ae72a5b0ba49560f10da345001273795`
+- `f3473448140a20dc3b763ad49db039ff6b8c2cae`
+- `a700e09e7afe74e7083052d63a1362182934599b`
+- `dc6ddd97f937268b33f877150c55d539e5b96253`
+- `381814aace60391cdaec794230c41e7b36e41261`
+
+### Canonical homepage alias temizliği
+GSC sayfa raporunda hem `/` hem `/index.html`, ayrıca `/en/` ve `/en/index.html` ayrı satırlar olarak görünüyordu.
+- Sitemap zaten yalnız canonical kök URL'leri kullanıyor.
+- Ana sayfaların canonical etiketleri doğruydu; ancak hreflang ve sayfa içi home linkleri `index.html` alias'larını işaret ediyordu.
+- Türkçe ana sayfada hreflang artık TR = `https://drbeyazesyaservisi.com/`, EN = `https://drbeyazesyaservisi.com/en/`, x-default = kök URL.
+- İngilizce ana sayfada da aynı canonical hreflang eşleşmesi uygulandı.
+- Her iki ana sayfadaki kendi home/locale bağlantılarında `index.html` alias kullanımı kaldırıldı.
+- Canonical URL'ler değişmedi.
+
+Commitler:
+- `b9b5406828009238464f14213ce4d398ead7dab5`
+- `c11c587e92b5b21fef3ceae90a352d25f7c0c21e`
+
+Kontrol:
+- Türkçe ve İngilizce ana sayfa tekrar okundu.
+- Canonical ve hreflang URL'leri birbirleriyle uyumlu.
+- Bu iki sayfada `index.html` alias href kalmadı.
+- Yeni veri gelmeden bu yeni cihaz H1/iç bağlantı düzenlemeleri tekrar değiştirilmeyecek.
