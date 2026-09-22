@@ -26,6 +26,11 @@
 2. 2026-09-20 ve 2026-09-21 notları depoda bulunamadı.
 3. Canlı domain fetch doğrulaması araç erişimi nedeniyle engelli.
 
+## Ek teknik kontrol
+- Ana sayfa, hizmetler, 4 bölge sayfası, 8 ana cihaz sayfası, arıza rehberi, hata kodları ve iletişim dahil 17 yüksek niyetli sayfanın yerel .html bağlantıları depo dosya listesiyle karşılaştırıldı.
+- Bu grupta kök dizine giden kırık yerel .html bağlantısı bulunmadı.
+- Bölge ve cihaz sayfalarında telefon, WhatsApp, mobil iletişim çubuğu ve ortak site-ui yüklemesi mevcut; arıza rehberindeki eksik mobil çubuk bu çalışmada kapatıldı.
+
 ## Sıradaki adım
 - GSC erişimi geldiğinde aynı raporu aynı gün tekrarlamadan 28 günlük query+page verisiyle yüksek niyetli bölge/cihaz sayfalarını önceliklendir.
 - Yeni veri gelene kadar title/meta metinlerini tekrar değiştirme.
