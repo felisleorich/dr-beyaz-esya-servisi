@@ -208,3 +208,39 @@ Kontrol:
 - Her sayfada 3 adet `href="index.html"` bağlantısı `href="/"` olarak değişti.
 - Telefon ve WhatsApp linklerinin değişiklik sonrası mevcut olduğu doğrulandı.
 - Tek commit: `b8760c7fcf628834a2b46ff72e9a61e674e01a2a` — Consolidate canonical home links on service pages.
+
+
+## 2026-09-23 dönüşüm erişimi ve canonical bağlantı devamı
+### Arıza rehberlerinde eksik WhatsApp / mobil bar
+Denetimde 8 cihaz arıza rehberinin telefon linki taşıdığı ancak WhatsApp ve sabit mobil `Ara / WhatsApp` çubuğu taşımadığı görüldü:
+- `bulasik-makinesi-ariza-rehberi.html`
+- `buzdolabi-ariza-rehberi.html`
+- `camasir-makinesi-ariza-rehberi.html`
+- `derin-dondurucu-ariza-rehberi.html`
+- `firin-ariza-rehberi.html`
+- `klima-ariza-rehberi.html`
+- `kombi-ariza-rehberi.html`
+- `kurutma-makinesi-ariza-rehberi.html`
+
+Uygulama:
+- Hero bölümüne doğrudan WhatsApp erişimi eklendi.
+- Mobil sabit `Ara / WhatsApp` çubuğu eklendi.
+- Mevcut telefon erişimi korundu.
+- Ana sayfa linkleri `index.html` yerine canonical `/` oldu.
+- Footer hizmet bölgesi metni Pendik • Kurtköy • Tuzla • Kartal olarak güncellendi.
+- Commit: `efd09bfe69e3516281249a75aa0b15cc4b171031`.
+
+Doğrulama:
+- 8 sayfanın tamamı yeniden okundu.
+- Telefon = mevcut, WhatsApp = mevcut, mobil sabit bar = mevcut.
+- Ayrıca 21 belirti/arıza detay sayfası örneklem değil tam liste olarak denetlendi; telefon, WhatsApp ve mobil bar bu 21 sayfanın tamamında zaten mevcuttu, tekrar değişiklik yapılmadı.
+
+### GSC'de görünür diğer sayfalarda canonical home link temizliği
+- GSC sayfa raporunda görünür üst sayfalarda kalan `href="index.html"` home linkleri canonical `/` hedefiyle değiştirildi.
+- İlk ek paket commit: `cde12bfad571008fe16bedba86d32b7652ac8281`.
+- İkinci ek paket commit: `fe03332e210373ff5e75c0890ff9f77957012a29`.
+- İngilizce GSC sayfalarında kendi home bağlantıları `/en/`, Türkçe dönüş bağlantıları `/` olarak konsolide edildi.
+- İngilizce paket commit: `b9d35cb579daa2dbca53bfe41a8f5d38f4111efd`.
+
+Not:
+- Bu değişiklikler canonical hedefleri değiştirmedi; yalnız sayfa içi bağlantıları zaten tanımlı canonical URL'lerle uyumlu hale getirdi.
