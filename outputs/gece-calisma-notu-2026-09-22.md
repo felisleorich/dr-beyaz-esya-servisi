@@ -120,3 +120,31 @@ Kontrol:
 - Güncel main dosyaları yeniden okundu.
 - H1 ve tüm hedef anchor metinleri doğrulandı.
 - Sonraki ölçümden önce aynı sorgu için yeni title/meta değişikliği yapılmayacak.
+
+
+## 2026-09-23 query→page doğrulaması: tuzla buzdolabı tamircisi
+Search Console ekran doğrulaması:
+- Sorgu: `tuzla buzdolabı tamircisi`
+- Son 28 gün.
+- Anasayfa: 43 gösterim, 0 tıklama, CTR %0, ortalama konum 1.2.
+- Başka sayfa görünür satır olarak çıkmadı; özel `tuzla-buzdolabi-servisi.html` sorguda eşleşmiyor.
+
+Yorum:
+- Google sorguyu anasayfayla eşleştiriyor.
+- Özel Tuzla buzdolabı sayfası mevcut ancak “tamir” arama niyetini metadata ve ilk paragrafta yeterince açık taşımıyordu.
+- Anasayfanın title/meta alanı değiştirilmedi; mevcut sıralama korunarak hedef sayfa ve ona giden iç linkler güçlendirildi.
+
+Uygulanan değişiklikler:
+- `tuzla-buzdolabi-servisi.html` title: `Tuzla Buzdolabı Servisi ve Tamiri | Dr. Beyaz Eşya Servisi`
+- Meta description ve hero ilk paragrafında `buzdolabı servisi ve tamiri` ifadesi doğal biçimde eklendi.
+- `tuzla-beyaz-esya-servisi.html` ve `tuzla-hizmetler.html` iç bağlantı metinleri `Tuzla Buzdolabı Servisi →` olarak netleştirildi.
+
+Commitler:
+- `d3fa0b8b23ba238952fc776cc4813b2f759d751f` — Align Tuzla refrigerator page with repair search intent
+- `09cf1dec76c6dc3b092b263ff71c332f272cddf4`
+- `e43672157a923803eb355515abcde2771ab904c1` — Strengthen Tuzla refrigerator internal anchors
+
+Kontrol:
+- Güncel main dosyaları tekrar okundu.
+- Yeni title/description ve hedef anchor metinleri doğrulandı.
+- Bu sorgu için yeni veri gelmeden tekrar title/meta değişikliği yapılmayacak.
