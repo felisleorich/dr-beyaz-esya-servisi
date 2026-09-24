@@ -1,0 +1,75 @@
+name: Render real archive Instagram post
+
+on:
+  push:
+    paths:
+      - ".github/workflows/render-real-archive-post.yml"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install --quiet pillow
+      - name: Render
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageDraw, ImageFont
+          from pathlib import Path
+
+          src = Path("assets/images/gercek-servis/buzdolabi-servis-05.jpeg")
+          out = Path("/tmp/buzdolabi-buzlanma-gercek-servis-05.png")
+          W,H = 1080,1350
+          NAVY=(5,22,40); NAVY2=(8,42,68); CYAN=(16,226,234); WHITE=(247,249,251); MUTED=(196,210,220)
+
+          img = Image.new("RGB",(W,H),NAVY)
+          photo = Image.open(src).convert("RGB")
+          photo_h = 790
+          scale=max(W/photo.width, photo_h/photo.height)
+          nw,nh=int(photo.width*scale),int(photo.height*scale)
+          photo=photo.resize((nw,nh),Image.Resampling.LANCZOS)
+          left=max(0,(nw-W)//2); top=max(0,(nh-photo_h)//2)
+          photo=photo.crop((left,top,left+W,top+photo_h))
+          img.paste(photo,(0,0))
+
+          d=ImageDraw.Draw(img)
+          d.rectangle((0,photo_h,W,H),fill=NAVY)
+          d.arc((-140,photo_h-115,W+180,photo_h+165),184,355,fill=CYAN,width=7)
+
+          fd="/usr/share/fonts/truetype/dejavu"
+          def F(n,s): return ImageFont.truetype(f"{fd}/{n}",s)
+
+          # Plain programmatic brand badge, no generated image
+          d.rounded_rectangle((42,36,250,142),radius=26,fill=(4,28,48),outline=CYAN,width=4)
+          d.text((65,48),"DR",font=F("DejaVuSans-Bold.ttf",56),fill=WHITE)
+          d.text((151,58),"SERVİS",font=F("DejaVuSans-Bold.ttf",20),fill=CYAN)
+          d.text((151,86),"PENDİK",font=F("DejaVuSans.ttf",17),fill=WHITE)
+
+          d.rounded_rectangle((52,824,530,886),radius=31,fill=CYAN)
+          d.text((83,837),"GERÇEK SERVİS ÇALIŞMASI",font=F("DejaVuSans-Bold.ttf",27),fill=NAVY)
+
+          d.text((52,910),"Buzdolabında",font=F("DejaVuSans-Bold.ttf",66),fill=WHITE)
+          d.text((52,982),"bu kadar buzlanma",font=F("DejaVuSans-Bold.ttf",62),fill=CYAN)
+          d.text((52,1054),"normal mi?",font=F("DejaVuSans-Bold.ttf",64),fill=WHITE)
+
+          cy=1200
+          d.rounded_rectangle((50,cy-44,1030,cy+45),radius=45,fill=(5,26,44),outline=CYAN,width=4)
+          d.ellipse((72,cy-28,128,cy+28),fill=CYAN)
+          d.text((155,cy-30),"0542 891 22 25",font=F("DejaVuSans-Bold.ttf",52),fill=WHITE)
+
+          d.text((57,1284),"Pendik  •  Kurtköy  •  Tuzla  •  Kartal",font=F("DejaVuSans-Bold.ttf",25),fill=WHITE)
+          site="drbeyazesyaservisi.com"
+          tw=d.textbbox((0,0),site,font=F("DejaVuSans.ttf",23))[2]
+          d.text((W-52-tw,1286),site,font=F("DejaVuSans.ttf",23),fill=CYAN)
+
+          img.save(out,"PNG",optimize=True)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: instagram-gercek-servis-05
+          path: /tmp/buzdolabi-buzlanma-gercek-servis-05.png
