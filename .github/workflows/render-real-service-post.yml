@@ -1,0 +1,122 @@
+name: Render real service Instagram post
+
+on:
+  push:
+    paths:
+      - ".github/workflows/render-real-service-post.yml"
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Pillow
+        run: python -m pip install --quiet pillow
+
+      - name: Render post from real service photo
+        run: |
+          python - <<'PY'
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter
+          from pathlib import Path
+          import math
+
+          src = Path("assets/images/gercek-servis/buzdolabi-servis-03.jpeg")
+          out = Path("/tmp/buzdolabi-buzlanma-gercek-servis.png")
+
+          W,H = 1080,1350
+          NAVY=(5,22,40)
+          NAVY2=(8,42,68)
+          CYAN=(16,226,234)
+          WHITE=(247,249,251)
+          MUTED=(196,210,220)
+
+          base = Image.new("RGB",(W,H),NAVY)
+          photo = Image.open(src).convert("RGB")
+
+          # Photo: preserve original pixels, only crop/resize.
+          photo_h = 790
+          scale = max(W/photo.width, photo_h/photo.height)
+          nw,nh = int(photo.width*scale), int(photo.height*scale)
+          photo = photo.resize((nw,nh), Image.Resampling.LANCZOS)
+          left=(nw-W)//2
+          top=max(0,(nh-photo_h)//2)
+          photo=photo.crop((left,top,left+W,top+photo_h))
+          base.paste(photo,(0,0))
+
+          # Bottom brand panel with simple gradient (not AI).
+          panel = Image.new("RGB",(W,H-photo_h),NAVY)
+          pp=panel.load()
+          for y in range(panel.height):
+              t=y/max(1,panel.height-1)
+              for x in range(panel.width):
+                  v = 0.20*math.sin((x/W)*math.pi*1.7 + t*1.4)
+                  mix=min(1,max(0,t*0.65+0.18+v*0.08))
+                  pp[x,y]=tuple(int(NAVY2[i]*(1-mix)+NAVY[i]*mix) for i in range(3))
+          base.paste(panel,(0,photo_h))
+          d=ImageDraw.Draw(base)
+
+          # Curved divider
+          d.arc((-130, photo_h-120, W+180, photo_h+155), 184, 355, fill=CYAN, width=7)
+          d.arc((-170, photo_h-95, W+160, photo_h+175), 184, 355, fill=(8,112,151), width=3)
+
+          font_dir="/usr/share/fonts/truetype/dejavu"
+          def F(name,size):
+              return ImageFont.truetype(f"{font_dir}/{name}",size)
+          bold=F("DejaVuSans-Bold.ttf",1)
+          reg=F("DejaVuSans.ttf",1)
+
+          # Simple non-AI DR badge
+          bx,by=48,42
+          d.rounded_rectangle((bx,by,bx+215,by+108),radius=26,fill=(4,28,48,235),outline=CYAN,width=4)
+          d.text((bx+22,by+10),"DR",font=F("DejaVuSans-Bold.ttf",54),fill=WHITE)
+          d.text((bx+117,by+25),"SERVİS",font=F("DejaVuSans-Bold.ttf",22),fill=CYAN)
+          d.text((bx+117,by+55),"PENDİK",font=F("DejaVuSans.ttf",18),fill=WHITE)
+
+          # Real service pill
+          pill=(52, photo_h+34, 530, photo_h+96)
+          d.rounded_rectangle(pill,radius=31,fill=CYAN)
+          d.text((88,photo_h+47),"GERÇEK SERVİS ÇALIŞMASI",font=F("DejaVuSans-Bold.ttf",27),fill=NAVY)
+
+          # Title
+          title1="Buzdolabında"
+          title2="bu kadar buzlanma"
+          title3="normal mi?"
+          y=photo_h+125
+          d.text((52,y),title1,font=F("DejaVuSans-Bold.ttf",65),fill=WHITE)
+          d.text((52,y+72),title2,font=F("DejaVuSans-Bold.ttf",64),fill=CYAN)
+          d.text((52,y+144),title3,font=F("DejaVuSans-Bold.ttf",64),fill=WHITE)
+
+          # Small subtitle
+          d.rectangle((54,y+222,61,y+267),fill=CYAN)
+          d.text((80,y+224),"Evaporatör buzlanması • kontrol ve arıza tespiti",font=F("DejaVuSans.ttf",27),fill=MUTED)
+
+          # Phone CTA
+          cy=1205
+          d.rounded_rectangle((50,cy-44,1030,cy+45),radius=45,fill=(5,26,44),outline=CYAN,width=4)
+          d.ellipse((72,cy-28,128,cy+28),fill=CYAN)
+          d.text((91,cy-22),"☎",font=F("DejaVuSans.ttf",33),fill=NAVY)
+          d.text((155,cy-30),"0542 891 22 25",font=F("DejaVuSans-Bold.ttf",52),fill=WHITE)
+
+          # Footer
+          d.text((57,1284),"Pendik  •  Kurtköy  •  Tuzla  •  Kartal",font=F("DejaVuSans-Bold.ttf",25),fill=WHITE)
+          site="drbeyazesyaservisi.com"
+          tw=d.textbbox((0,0),site,font=F("DejaVuSans.ttf",23))[2]
+          d.text((W-52-tw,1286),site,font=F("DejaVuSans.ttf",23),fill=CYAN)
+
+          base.save(out,"PNG",optimize=True)
+          print(out)
+          PY
+
+      - name: Upload Instagram post
+        uses: actions/upload-artifact@v4
+        with:
+          name: instagram-gercek-servis
+          path: /tmp/buzdolabi-buzlanma-gercek-servis.png
+          if-no-files-found: error
