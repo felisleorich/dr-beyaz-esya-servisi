@@ -1,0 +1,11 @@
+.ds-kombi .ds-hero-art img{object-position:center 62%}
+.ds-kombi .ds-gallery{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.ds-kombi .ds-gallery img{height:auto;aspect-ratio:3/4;object-fit:cover}
+.ds-kombi .ds-gallery a{display:block;border-radius:12px;overflow:hidden}
+.ds-kombi .ds-issues{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ds-kombi .ds-issues .ds-text-link{margin-top:18px;font-size:12px}
+.ds-kombi .ds-brand-links{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.ds-kombi .ds-brand-links a{display:flex;justify-content:space-between;gap:12px;padding:20px;border:1px solid var(--ds-line);border-radius:8px;text-decoration:none;color:var(--ds-ink);font-weight:600}
+.ds-kombi .ds-brand-links a:hover{background:var(--ds-soft)}
+@media(max-width:1000px){.ds-kombi .ds-issues{grid-template-columns:repeat(2,minmax(0,1fr))}.ds-kombi .ds-gallery{gap:18px}.ds-kombi .ds-gallery h3{font-size:20px}}
+@media(max-width:650px){.ds-kombi .ds-gallery,.ds-kombi .ds-issues{grid-template-columns:1fr}.ds-kombi .ds-gallery{gap:32px}.ds-kombi .ds-brand-links{grid-template-columns:repeat(2,minmax(0,1fr))}.ds-kombi .ds-brand-links a{padding:15px;font-size:13px}.ds-kombi .ds-hero-art img{height:400px;object-position:center 60%}.ds-kombi h1{font-size:42px}}

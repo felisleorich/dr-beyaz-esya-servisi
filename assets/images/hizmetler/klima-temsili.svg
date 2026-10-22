@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" role="img" aria-labelledby="title desc">
+<title id="title">Klima iç ünitesi — temsili çizim</title><desc id="desc">Açık yeşil duvar üzerinde beyaz klima iç ünitesi ve serin hava çizgileri.</desc>
+<defs><linearGradient id="wall" x2="1" y2="1"><stop stop-color="#d9ebe5"/><stop offset="1" stop-color="#b4d4cc"/></linearGradient><linearGradient id="unit" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#dfe8e6"/></linearGradient><filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#234a43" flood-opacity=".18"/></filter></defs>
+<path fill="url(#wall)" d="M0 0h800v900H0z"/><circle cx="700" cy="80" r="300" fill="#fff" opacity=".15"/>
+<g filter="url(#shadow)"><rect x="80" y="235" width="640" height="245" rx="36" fill="url(#unit)"/><path d="M110 421h580v35H110z" fill="#22494b"/><path d="M120 428h560m-560 9h560m-560 9h560" stroke="#86a9a2" stroke-width="3"/><path d="M106 390h588" stroke="#c5d6d1" stroke-width="3"/><rect x="606" y="295" width="50" height="28" rx="6" fill="#edf6f2"/><text x="631" y="316" fill="#087d82" font-family="Arial,sans-serif" font-size="20" text-anchor="middle">24°</text><circle cx="583" cy="310" r="4" fill="#087d82"/></g>
+<g stroke="#fff" fill="none" stroke-width="9" stroke-linecap="round" opacity=".65"><path d="M240 520c-70 80 60 100-10 185"/><path d="M400 520c-70 80 60 100-10 185"/><path d="M560 520c-70 80 60 100-10 185"/></g>
+</svg>
