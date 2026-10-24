@@ -6,7 +6,7 @@
  var form=document.getElementById('appointment-form');
  if(!form)return;
  var params=new URLSearchParams(location.search);
- ['marka','mahalle','ilce'].forEach(function(key){var value=params.get(key);if(value&&form.elements[key])form.elements[key].value=value.slice(0,100);});
+ ['marka','mahalle','ilce','cihaz'].forEach(function(key){var value=params.get(key);if(value&&form.elements[key])form.elements[key].value=value.slice(0,100);});
  var today=new Date();var localDate=today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
  form.elements.tarih.min=localDate;
  var result=document.getElementById('appointment-result');var message=document.getElementById('appointment-message');var send=document.getElementById('appointment-send');
