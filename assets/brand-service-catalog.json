@@ -405,7 +405,7 @@
         "firin"
       ],
       "source": "https://simfer.com.tr/",
-      "note": "Ankastre, solo veya mini fırın ayrımını ve model etiketini belirtin. Ocaklı ürünlerde gazlı ya da elektrikli bölümdeki sorunu ayrı anlatın.",
+      "note": "Ankastre, solo veya mini fırın ayrımını ve model etiketini belirtin. Sorunun hangi fırın programında ortaya çıktığını paylaşın.",
       "legacy": false
     },
     {
@@ -417,7 +417,7 @@
         "firin"
       ],
       "source": "https://www.kumtel.com/",
-      "note": "Ankastre setlerde fırın ve ocak ayrı model numaralarına sahip olabilir. Sorun yaşanan cihazın kendi etiketini paylaşın.",
+      "note": "Ankastre setlerde fırın ayrı model numaralarına sahip olabilir. Sorun yaşanan cihazın kendi etiketini paylaşın.",
       "legacy": false
     },
     {
