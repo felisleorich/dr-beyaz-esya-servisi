@@ -91,16 +91,22 @@
   }
 
   updateInternalFlagFromUrl();
-  window.DR_ANALYTICS_DISABLED = isInternalDevice();
+  window.DR_ANALYTICS_DISABLED = isInternalDevice() || !/^(www\.)?drbeyazesyaservisi\.com$/.test(window.location.hostname);
   window['ga-disable-' + measurementId] = !!window.DR_ANALYTICS_DISABLED;
 
   if (window.DR_ANALYTICS_DISABLED) return;
+
+  var analyticsUrl = new URL(window.location.href);
+  ['marka', 'mahalle', 'ilce', 'cihaz', 'sorun', 'text', 'telefon', 'ad'].forEach(function (key) {
+    analyticsUrl.searchParams.delete(key);
+  });
+  analyticsUrl.hash = '';
 
   window.dataLayer = window.dataLayer || [];
   if (typeof window.gtag !== 'function') {
     window.gtag = function () { window.dataLayer.push(arguments); };
     window.gtag('js', new Date());
-    window.gtag('config', measurementId, { send_page_view: true });
+    window.gtag('config', measurementId, { send_page_view: true, page_location: analyticsUrl.href });
 
     var script = document.createElement('script');
     script.async = true;
@@ -114,6 +120,8 @@
   'use strict';
 
   function getPlacement(link) {
+    if (link.id === 'appointment-send') return 'appointment_draft';
+    if (link.closest('footer')) return 'footer';
     if (link.closest('.mobile-actions')) return 'mobile_bar';
     if (link.closest('.cta')) return 'cta';
     if (link.closest('.hero-actions')) return 'hero';
@@ -152,5 +160,9 @@
 
     sendEvent('contact_click', eventData);
     sendEvent(method === 'phone' ? 'phone_click' : 'whatsapp_click', eventData);
+    if (link.id === 'appointment-send') sendEvent('appointment_whatsapp_click', {
+      contact_method: 'whatsapp', contact_page: window.location.pathname,
+      contact_placement: 'appointment_draft'
+    });
   }, { passive: true });
 })();
