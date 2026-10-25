@@ -1,0 +1,540 @@
+{
+  "checked": "2026-10-25",
+  "brands": [
+    {
+      "key": "arcelik",
+      "name": "Arçelik",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin",
+        "kombi"
+      ],
+      "note": "Ürün etiketi üzerindeki model ve ürün numarası, aynı marka içindeki farklı cihaz serilerini ayırmaya yardımcı olur.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "beko",
+      "name": "Beko",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin",
+        "kombi"
+      ],
+      "note": "Ekrandaki kodu cihaz türüyle birlikte paylaşın; aynı kod çamaşır ve bulaşık makinelerinde farklı anlam taşıyabilir.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "bosch",
+      "name": "Bosch",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin",
+        "kombi"
+      ],
+      "note": "E-Nr ve varsa FD bilgisini etiketten paylaşmanız cihaz serisini belirlemeyi kolaylaştırır. Kombi için model adını ayrıca belirtin.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "siemens",
+      "name": "Siemens",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "note": "Model etiketindeki E-Nr bilgisi, hata kodunu doğru cihaz ailesiyle eşleştirmeye yardımcı olur.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "samsung",
+      "name": "Samsung",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "note": "Model Code bilgisini ve ekrandaki kodun fotoğrafını paylaşın. Harf ile rakamın karışması yanlış değerlendirmeye yol açabilir.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "baymak",
+      "name": "Baymak",
+      "devices": [
+        "kombi"
+      ],
+      "note": "Kombi model adı, hata kodu ve sorunun sıcak su mu ısıtma mı olduğu ön değerlendirmede birlikte ele alınır.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "buderus",
+      "name": "Buderus",
+      "devices": [
+        "kombi"
+      ],
+      "note": "Logamax serisi dahil modelin tam adını ve ekrandaki tüm kodları iletin; seri bilgisi olmadan parça kararı verilmez.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "demirdokum",
+      "name": "Demirdöküm",
+      "devices": [
+        "kombi"
+      ],
+      "note": "Nitromix, Atron veya diğer model adını etikette göründüğü şekilde paylaşın. Hata kodunun anlamı model kılavuzuyla birlikte değerlendirilir.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "eca",
+      "name": "ECA",
+      "devices": [
+        "kombi"
+      ],
+      "note": "Cihazın modelini ve arızanın hangi kullanım sırasında çıktığını yazın. Ekrandaki basınç değeri de değerlendirmeye yardımcı olur.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "vaillant",
+      "name": "Vaillant",
+      "devices": [
+        "kombi"
+      ],
+      "note": "F kodunu ve model adını eksiksiz paylaşın. Hata kodu bir kontrol alanını gösterir; tek başına kesin parça teşhisi değildir.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "viessmann",
+      "name": "Viessmann",
+      "devices": [
+        "kombi"
+      ],
+      "note": "Vitodens veya diğer seri adıyla birlikte model numarasını iletin. Kodlar farklı cihaz nesillerinde farklılaşabilir.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "immergas",
+      "name": "Immergas",
+      "devices": [
+        "kombi"
+      ],
+      "note": "Model adı ve ekrandaki hata numarasını birlikte paylaşın. Sıcak su ve ısıtma davranışını ayrı ayrı anlatmanız yararlıdır.",
+      "source": "",
+      "legacy": false
+    },
+    {
+      "key": "vestel",
+      "name": "Vestel",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.vestel.com.tr/beyaz-esya-c-1",
+      "note": "Model adıyla birlikte ürün etiketini paylaşın. Aynı kapasitedeki cihazlarda bile kontrol kartı ve program yapısı değişebilir.",
+      "legacy": false
+    },
+    {
+      "key": "profilo",
+      "name": "Profilo",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.profilo.com/tr/tr",
+      "note": "Model etiketindeki E-Nr ve varsa FD bilgisi doğru cihaz sürümünü belirlemeye yardımcı olur.",
+      "legacy": false
+    },
+    {
+      "key": "altus",
+      "name": "Altus",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.altus.com.tr/",
+      "note": "Ürün etiketi ve model numarasını iletin; panel görünümü veya yalnızca kapasite bilgisi parça seçimi için yeterli değildir.",
+      "legacy": false
+    },
+    {
+      "key": "regal",
+      "name": "Regal",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.regal-tr.com/",
+      "note": "Model ve seri bilgisini birlikte paylaşın. Aynı marka içindeki farklı üretim serileri ayrı değerlendirilir.",
+      "legacy": false
+    },
+    {
+      "key": "grundig",
+      "name": "Grundig",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.grundig.com.tr/",
+      "note": "Model numarasını ve arızanın oluştuğu programı belirtin. Kombine yıkama-kurutma cihazıysa bunu ayrıca not edin.",
+      "legacy": false
+    },
+    {
+      "key": "seg",
+      "name": "SEG",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://en.turkbesd.org/corporate/members/",
+      "note": "Cihaz etiketindeki model bilgisini iletin. Başka bir markayla benzer dış görünüm, parçaların aynı olduğu anlamına gelmez.",
+      "legacy": false
+    },
+    {
+      "key": "electrolux",
+      "name": "Electrolux",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.electrolux.com.tr/",
+      "note": "Model adıyla birlikte etiketteki PNC ürün numarasını paylaşın; teknik doküman ve parça uyumu bu bilgiyle netleşir.",
+      "legacy": false
+    },
+    {
+      "key": "miele",
+      "name": "Miele",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.miele.com.tr/",
+      "note": "Model ve fabrika numarasını iletin. Özel elektronik veya ankastre çözümlerde işlem ve parça uygunluğunu model üzerinden değerlendiriyoruz.",
+      "legacy": false
+    },
+    {
+      "key": "hoover",
+      "name": "Hoover",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "firin"
+      ],
+      "source": "https://www.hoover-home.com/tr_TR/",
+      "note": "Model ve ürün kodunu birlikte paylaşın. Kurutmalı çamaşır makinesi ile bağımsız kurutma makinesini ayırt ederek talep oluşturun.",
+      "legacy": false
+    },
+    {
+      "key": "candy",
+      "name": "Candy",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "firin"
+      ],
+      "source": "https://en.turkbesd.org/corporate/members/",
+      "note": "Ürün kodu ve model adını belirtin. Ekrandaki kod ile programın hangi aşamada durduğunu birlikte değerlendirelim.",
+      "legacy": false
+    },
+    {
+      "key": "haier",
+      "name": "Haier",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "firin"
+      ],
+      "source": "https://www.haier-europe.com/tr_TR",
+      "note": "Modeli ve ürün kodunu paylaşın. Çok kapılı buzdolabında sorunun hangi bölmede yaşandığını ayrıca belirtin.",
+      "legacy": false
+    },
+    {
+      "key": "lg",
+      "name": "LG",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi"
+      ],
+      "source": "https://www.lg.com/tr/lg-beyaz-esya/",
+      "note": "Model numarası ve varsa ekrandaki harf-rakam kodunu paylaşın. WashTower gibi birleşik kurulumlarda sorun yaşayan üniteyi ayrıca belirtin.",
+      "legacy": false
+    },
+    {
+      "key": "aeg",
+      "name": "AEG",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.aeg.com.tr/",
+      "note": "Eski seri cihazlarda tam model ve ürün/servis numarası önemlidir. Parça bulunabilirliğini ve onarım seçeneğini cihazınıza göre görüşmede netleştiriyoruz.",
+      "legacy": true
+    },
+    {
+      "key": "indesit",
+      "name": "Indesit",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.rekabet.gov.tr/Karar?kararId=9b729a53-983a-4cb8-a023-429bc5a50405",
+      "note": "Eski seri cihazlarda tam model ve ürün/servis numarası önemlidir. Parça bulunabilirliğini ve onarım seçeneğini cihazınıza göre görüşmede netleştiriyoruz.",
+      "legacy": true
+    },
+    {
+      "key": "hotpoint-ariston",
+      "name": "Hotpoint Ariston",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.rekabet.gov.tr/Karar?kararId=9b729a53-983a-4cb8-a023-429bc5a50405",
+      "note": "Eski seri cihazlarda tam model ve ürün/servis numarası önemlidir. Parça bulunabilirliğini ve onarım seçeneğini cihazınıza göre görüşmede netleştiriyoruz.",
+      "legacy": true
+    },
+    {
+      "key": "whirlpool",
+      "name": "Whirlpool",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "kurutma-makinesi",
+        "derin-dondurucu",
+        "firin"
+      ],
+      "source": "https://www.whirlpool.com/",
+      "note": "Eski seri cihazlarda tam model ve ürün/servis numarası önemlidir. Parça bulunabilirliğini ve onarım seçeneğini cihazınıza göre görüşmede netleştiriyoruz.",
+      "legacy": true
+    },
+    {
+      "key": "ugur",
+      "name": "Uğur",
+      "devices": [
+        "buzdolabi",
+        "derin-dondurucu"
+      ],
+      "source": "https://ugur.com.tr/",
+      "note": "Sandık veya çekmeceli tip bilgisini ve model etiketini paylaşın. Ev tipi cihaz ile ticari soğutucu talepleri ayrı değerlendirilir; ticari ürün için önce uygunluğu sorun.",
+      "legacy": false
+    },
+    {
+      "key": "simfer",
+      "name": "Simfer",
+      "devices": [
+        "buzdolabi",
+        "camasir-makinesi",
+        "bulasik-makinesi",
+        "firin"
+      ],
+      "source": "https://simfer.com.tr/",
+      "note": "Ankastre, solo veya mini fırın ayrımını ve model etiketini belirtin. Ocaklı ürünlerde gazlı ya da elektrikli bölümdeki sorunu ayrı anlatın.",
+      "legacy": false
+    },
+    {
+      "key": "kumtel",
+      "name": "Kumtel",
+      "devices": [
+        "buzdolabi",
+        "bulasik-makinesi",
+        "firin"
+      ],
+      "source": "https://www.kumtel.com/",
+      "note": "Ankastre setlerde fırın ve ocak ayrı model numaralarına sahip olabilir. Sorun yaşanan cihazın kendi etiketini paylaşın.",
+      "legacy": false
+    },
+    {
+      "key": "silverline",
+      "name": "Silverline",
+      "devices": [
+        "buzdolabi",
+        "bulasik-makinesi",
+        "firin"
+      ],
+      "source": "https://silverline.com/tr/media/ip5f3lpf/fl_2024_5.pdf",
+      "note": "Ankastre cihazın modelini ve montaj biçimini belirtin. Mobilya kapağı veya panel erişimi gerektiren işlemleri cihazı sökmeden servisle planlayın.",
+      "legacy": false
+    },
+    {
+      "key": "teka",
+      "name": "Teka",
+      "devices": [
+        "buzdolabi",
+        "bulasik-makinesi",
+        "firin"
+      ],
+      "source": "https://www.teka.com/tr-tr/",
+      "note": "Ankastre cihazın modelini ve montaj biçimini belirtin. Mobilya kapağı veya panel erişimi gerektiren işlemleri cihazı sökmeden servisle planlayın.",
+      "legacy": false
+    },
+    {
+      "key": "franke",
+      "name": "Franke",
+      "devices": [
+        "buzdolabi",
+        "bulasik-makinesi",
+        "firin"
+      ],
+      "source": "https://www.franke.com/tr/tr/home-solutions.html",
+      "note": "Ankastre cihazın modelini ve montaj biçimini belirtin. Mobilya kapağı veya panel erişimi gerektiren işlemleri cihazı sökmeden servisle planlayın.",
+      "legacy": false
+    },
+    {
+      "key": "airfel",
+      "name": "Airfel",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.airfel.com/",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "daikin",
+      "name": "Daikin",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.daikin.com.tr/kombi",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "alarko",
+      "name": "Alarko",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.alarko-carrier.com.tr/",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "ariston",
+      "name": "Ariston",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.ariston.com/tr-tr/%C3%BCr%C3%BCnler/kombiler/",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "ferroli",
+      "name": "Ferroli",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.ferroli.com.tr/",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "protherm",
+      "name": "Protherm",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.protherm.com.tr/",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "warmhaus",
+      "name": "Warmhaus",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://www.warmhaus.com/tr/tuketici-destek/sss",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    },
+    {
+      "key": "termoteknik",
+      "name": "Termoteknik",
+      "devices": [
+        "kombi"
+      ],
+      "source": "https://termoteknik.com/",
+      "note": "Kombinin tam model adını, hata kodunu ve basınç göstergesini paylaşın. Sıcak su ile kalorifer davranışını ayrı ayrı anlatın; model doğrulanmadan koddan parça sonucu çıkarılmaz.",
+      "legacy": false
+    }
+  ]
+}
