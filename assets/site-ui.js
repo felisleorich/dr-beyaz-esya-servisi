@@ -44,7 +44,14 @@
       if (returnFocus) menu.focus();
     }
     setOpen(false);
-    menu.addEventListener('click', function () { setOpen(!nav.classList.contains('open')); });
+    menu.addEventListener('click', function () {
+      var open = !nav.classList.contains('open');
+      setOpen(open);
+      if (open) { var first = nav.querySelector('a'); if (first) first.focus(); }
+    });
+    document.addEventListener('focusin', function (event) {
+      if (nav.classList.contains('open') && !nav.contains(event.target) && event.target !== menu) setOpen(false);
+    });
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' && nav.classList.contains('open')) setOpen(false, true);
     });

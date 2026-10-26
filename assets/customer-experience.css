@@ -16,3 +16,26 @@
 @media(max-width:800px){.cx-layout{grid-template-columns:1fr;gap:24px}.cx-aside{position:static;grid-row:1}.cx-aside nav{grid-template-columns:1fr 1fr;gap:8px}.cx-aside .ds-button{width:auto}.cx-finder form{grid-template-columns:1fr 1fr}.cx-finder button{grid-column:1/-1}.cx-intro{padding-top:32px}.cx-access .ds-wrap{gap:4px;display:grid;grid-template-columns:1fr 1fr}.cx-access a{text-align:center;font-size:12px;padding:10px 6px}}
 @media(max-width:480px){.cx-finder{padding:22px}.cx-finder form{grid-template-columns:1fr}.cx-intro h1{letter-spacing:-1px}.cx-intro>p,.cx-article p,.cx-article li{font-size:16px}.cx-article h2{font-size:25px}.cx-faq summary{padding:20px}.cx-faq details p{padding:0 20px 20px}.ds-page .mobile-actions{padding-bottom:env(safe-area-inset-bottom)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* Navigation hierarchy, readable mobile forms and clear interactive states. */
+.ds-page .ds-header .nav nav:not(.open):has(.ux-nav-group){display:none}
+.ds-page .ds-header .nav nav.open:has(.ux-nav-group){width:min(950px,100%);padding:24px;gap:24px;max-height:calc(100dvh - 170px);overscroll-behavior:contain}
+.ux-nav-group{min-width:0}.ds-page .ux-nav-title{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--ds-copy);padding:0 14px 14px;margin:0 0 8px;border-bottom:1px solid var(--ds-line)}
+.ds-page .ds-header .nav nav.open .ux-nav-group a{display:block;min-height:44px;line-height:1.5;font-size:14px}
+.ds-page .ds-header .theme-toggle{min-width:44px;min-height:44px}
+.ds-page :where(input,select,textarea,a,button,summary){scroll-margin-block:110px 100px}
+.ds-page .rv-search select{display:block;width:100%;padding:14px 16px;min-height:50px;border:1px solid var(--ds-line);border-radius:8px;margin-top:12px;background:var(--ds-bg);color:var(--ds-ink);font:inherit;font-size:16px}
+.ds-page .rv-search input,.ds-page .rv-form input,.ds-page .rv-form select,.ds-page .rv-form textarea,.ds-page .cx-finder select{font-size:16px}
+.ds-page .rv-panel[hidden]{display:none!important}
+.ds-page .ds-service-card{transition:box-shadow .18s ease,border-color .18s ease}
+@media(hover:hover){.ds-page .ds-service-card:hover{border-color:var(--ds-accent);box-shadow:0 10px 28px #122f3912}}
+@media(max-width:650px){
+ .ds-page .ds-header .nav nav.open:has(.ux-nav-group){grid-template-columns:1fr;padding:20px;gap:20px;max-height:calc(100dvh - 160px)}
+ .ds-page .ds-header .nav nav.open .ux-nav-group{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+ .ds-page .ux-nav-title{grid-column:1/-1;padding:0 8px 10px}
+ .ds-page .ds-header .theme-toggle{width:44px;min-width:44px}
+ .ds-page .ds-issues p,.ds-page .ds-process p,.ds-page .ds-faq p{font-size:15px;line-height:1.75}
+ .ds-page .ds-faq summary{font-size:16px;line-height:1.5}
+ .ds-page{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){.ds-page .ds-service-card{transition:none}}
+.ds-page .ds-header .nav nav.open:has(.ux-nav-group){align-items:start}

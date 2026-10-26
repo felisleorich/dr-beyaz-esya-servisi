@@ -12,7 +12,13 @@
  }
  form.addEventListener('input',function(){if(!started){started=true;trackAppointment('appointment_start');}});
  var params=new URLSearchParams(location.search);
- ['marka','mahalle','ilce','cihaz'].forEach(function(key){var value=params.get(key);if(value&&form.elements[key])form.elements[key].value=value.slice(0,100);});
+ ['marka','mahalle','ilce','cihaz'].forEach(function(key){
+  var value=params.get(key),field=form.elements[key];if(!value||!field)return;
+  if(field.tagName==='SELECT'){
+   var match=Array.from(field.options).find(function(option){return option.value.toLocaleLowerCase('tr-TR')===value.toLocaleLowerCase('tr-TR');});
+   if(match)field.value=match.value;
+  }else field.value=value.slice(0,100);
+ });
  var today=new Date();var localDate=today.getFullYear()+'-'+String(today.getMonth()+1).padStart(2,'0')+'-'+String(today.getDate()).padStart(2,'0');
  form.elements.tarih.min=localDate;
  var result=document.getElementById('appointment-result');var message=document.getElementById('appointment-message');var send=document.getElementById('appointment-send');
