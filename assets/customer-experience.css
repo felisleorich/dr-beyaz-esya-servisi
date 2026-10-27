@@ -100,3 +100,8 @@ html[data-theme=dark] .ds-page .ds-top{background:#153b40;color:#e7f5f2}
 @media(max-width:650px){.ds-page .ds-top .ds-wrap{font-size:10px;padding-block:8px;min-height:34px}.ds-page .gx-top-proof{gap:8px}.ds-page .gx-top-proof>span{font-size:10px}.ds-page .gx-frames{height:210px}.ds-page .gx-review-track{grid-auto-columns:90%;gap:16px}.ds-page .gx-review-track figure{padding:22px}.ds-page .gx-review-track blockquote{font-size:14px;line-height:1.75}.gx-review-tools p{font-size:12px;max-width:190px}.ds-page .ds-end .ds-phone-large{font-size:22px;min-height:54px}.ds-page .ds-end p{font-size:15px}.gx-photo-controls button{width:44px;height:44px}.ds-page .gx-service-card .ds-card-link{font-size:14px}.gx-trust-link{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.gx-frames,.gx-review-track{scroll-behavior:auto}}
 .ds-page .ds-end-actions{flex-shrink:0}.ds-page .ds-end .ds-phone-large{white-space:nowrap}.ds-page .ds-end>.ds-wrap>div:first-child{min-width:0}
+
+/* Keep the combustion chamber in frame without distorting the source photo. */
+.ds-page .gx-frames .gx-flame-photo,.ds-page .ds-gallery .gx-flame-photo{object-position:50% 44%}
+.ds-page .gx-frames{min-width:0;contain:layout}
+.ds-page .gx-frames img{box-sizing:border-box;max-width:none;flex-shrink:0}
