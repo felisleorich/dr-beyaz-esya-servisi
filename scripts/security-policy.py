@@ -28,7 +28,10 @@ def policy_for(source):
         "img-src 'self' data: https://images.pexels.com "+GOOGLE,
         "connect-src 'self' "+GOOGLE,
         "frame-src https://www.google.com https://www.googletagmanager.com",
-        "media-src 'self'", "worker-src 'none'", "upgrade-insecure-requests"
+        # HTTPS is enforced by the host's HTTP-to-HTTPS redirect. All external
+        # sources here are HTTPS. An upgrade directive also rewrites loopback
+        # asset URLs in WebKit, breaking the otherwise identical local preview.
+        "media-src 'self'", "worker-src 'none'"
     ])
 
 def expected(source):
