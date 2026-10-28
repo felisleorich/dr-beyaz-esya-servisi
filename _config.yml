@@ -1,0 +1,18 @@
+# Keep local tools, build configuration and internal notes out of branch-based Pages releases.
+exclude:
+  - site-editor.html
+  - scripts
+  - tests
+  - outputs
+  - test-results
+  - playwright-report
+  - release-site
+  - node_modules
+  - package.json
+  - package-lock.json
+  - playwright.config.cjs
+  - README-EDITOR.md
+  - GBP-uygulama-paketi.md
+  - GSC-plugin-SEO-onceliklendirme-2026-09-11.md
+  - V5.0-TECHNICAL-CHANGELOG.md
+  - SEO-FOTOGRAF-KATEGORILENDIRME-V4.1.1.csv

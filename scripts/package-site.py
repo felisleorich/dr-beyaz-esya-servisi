@@ -12,7 +12,7 @@ for name in filter(None,files):
     path=Path(name)
     if path.parts[0] in excluded: continue
     if len(path.parts)==1 and path.suffix not in {'.html','.css','.js','.json','.xml','.txt','.ico','.webmanifest'} and name not in root_allowed: continue
-    if name in {'package.json','package-lock.json','playwright.config.cjs'}: continue
+    if name in {'package.json','package-lock.json','playwright.config.cjs','site-editor.html'}: continue
     target=DEST/path; target.parent.mkdir(parents=True,exist_ok=True)
     shutil.copy2(ROOT/path,target); count+=1
 (DEST/'.nojekyll').touch()
