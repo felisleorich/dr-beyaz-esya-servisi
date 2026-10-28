@@ -104,7 +104,7 @@
   if (window.DR_ANALYTICS_DISABLED) return;
 
   var analyticsUrl = new URL(window.location.href);
-  ['marka', 'mahalle', 'ilce', 'cihaz', 'sorun', 'text', 'telefon', 'ad'].forEach(function (key) {
+  ['marka', 'mahalle', 'ilce', 'cihaz', 'sorun', 'text', 'telefon', 'ad', 'q', 'query', 'search'].forEach(function (key) {
     analyticsUrl.searchParams.delete(key);
   });
   analyticsUrl.hash = '';

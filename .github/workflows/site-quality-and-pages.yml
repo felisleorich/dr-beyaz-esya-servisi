@@ -1,0 +1,93 @@
+name: Site checks and Pages
+
+on:
+  push:
+    branches: [main, codex/site-search-quality]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: site-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Public pages, links, images and SEO
+        run: python scripts/check-site.py
+      - name: Search catalogue freshness
+        run: python scripts/build-search-index.py --check
+      - name: JavaScript syntax and regression tests
+        run: npm run check:js && npm test
+      - name: Install test browsers
+        run: npx playwright install --with-deps chromium webkit
+      - name: Desktop, small mobile and WebKit checks
+        run: npm run test:browser
+      - name: Save validation evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-quality-report
+          path: |
+            test-results/
+            playwright-report/
+          retention-days: 14
+      - name: Prepare verified site
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        run: python scripts/package-site.py
+      - name: Upload verified Pages artifact
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: release-site
+
+  pages-source:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: read
+    outputs:
+      workflow: ${{ steps.source.outputs.workflow }}
+    steps:
+      - uses: actions/github-script@v7
+        id: source
+        with:
+          script: |
+            const {data} = await github.rest.repos.getPages(context.repo);
+            const enabled = data.build_type === 'workflow';
+            core.setOutput('workflow', String(enabled));
+            await core.summary.addHeading('Pages publishing mode')
+              .addRaw(enabled ? 'GitHub Actions: deployment requires passing validation.' : 'Branch deployment is still enabled. Checks run, but do not yet block automatic branch publishing. In Settings > Pages, select GitHub Actions to enable the prepared deployment gate.')
+              .write();
+
+  deploy:
+    if: needs.pages-source.outputs.workflow == 'true'
+    needs: [validate, pages-source]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publish only the validated site
+        id: deployment
+        uses: actions/deploy-pages@v4
