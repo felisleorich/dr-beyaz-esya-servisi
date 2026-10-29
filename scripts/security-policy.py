@@ -4,6 +4,7 @@ GitHub Pages cannot set custom response headers. This meta policy deliberately
 does not pretend to provide frame-ancestors, HSTS or Permissions-Policy headers.
 """
 from pathlib import Path
+from html.parser import HTMLParser
 import argparse, base64, hashlib, re
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -14,11 +15,40 @@ GOOGLE="https://www.googletagmanager.com https://*.google-analytics.com https://
 def public_pages():
     return sorted(p for p in [*ROOT.glob('*.html'),*(ROOT/'en').glob('*.html'),*(ROOT/'blog').glob('*.html')] if p.name!='site-editor.html')
 
+class InlineScripts(HTMLParser):
+    """Collect raw script text from trusted build sources, not sanitize HTML."""
+    def __init__(self):
+        super().__init__(convert_charrefs=False)
+        self.bodies=[]
+        self.attrs=None
+        self.chunks=[]
+
+    def handle_starttag(self,tag,attrs):
+        if tag=='script':
+            self.attrs=dict(attrs)
+            self.chunks=[]
+
+    def handle_data(self,data):
+        if self.attrs is not None:
+            self.chunks.append(data)
+
+    def handle_endtag(self,tag):
+        if tag!='script' or self.attrs is None:return
+        body=''.join(self.chunks)
+        kind=(self.attrs.get('type') or '').strip().lower().split(';',1)[0]
+        if 'src' not in self.attrs and kind not in {'application/json','application/ld+json'} and body.strip():
+            self.bodies.append(body)
+        self.attrs=None
+        self.chunks=[]
+
 def policy_for(source):
+    scripts=InlineScripts()
+    scripts.feed(source)
+    scripts.close()
     hashes=[]
-    for attrs,body in re.findall(r'<script\b([^>]*)>(.*?)</script>',source,re.S|re.I):
-        if re.search(r'\bsrc\s*=',attrs,re.I) or re.search(r'type=["\']application/(?:ld\+)?json',attrs,re.I) or not body.strip():continue
-        digest=base64.b64encode(hashlib.sha256(body.replace('\r\n','\n').encode('utf8')).digest()).decode()
+    for body in scripts.bodies:
+        normalized=body.replace('\r\n','\n').replace('\r','\n')
+        digest=base64.b64encode(hashlib.sha256(normalized.encode('utf8')).digest()).decode()
         hashes.append("'sha256-"+digest+"'")
     # External script allowlist is limited to the existing Google measurement platform.
     return '; '.join([
